@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
+| [0854-making-a-large-island](https://github.com/bytebeaver/leetcode-solutions/tree/master/0854-making-a-large-island) |
 | [0952-word-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0952-word-subsets) |
 | [1396-count-servers-that-communicate](https://github.com/bytebeaver/leetcode-solutions/tree/master/1396-count-servers-that-communicate) |
 | [1524-string-matching-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/1524-string-matching-in-an-array) |
@@ -101,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
+| [0854-making-a-large-island](https://github.com/bytebeaver/leetcode-solutions/tree/master/0854-making-a-large-island) |
 | [1396-count-servers-that-communicate](https://github.com/bytebeaver/leetcode-solutions/tree/master/1396-count-servers-that-communicate) |
 | [1558-course-schedule-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/1558-course-schedule-iv) |
 | [1876-map-of-highest-peak](https://github.com/bytebeaver/leetcode-solutions/tree/master/1876-map-of-highest-peak) |
@@ -112,6 +114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
+| [0854-making-a-large-island](https://github.com/bytebeaver/leetcode-solutions/tree/master/0854-making-a-large-island) |
 | [1396-count-servers-that-communicate](https://github.com/bytebeaver/leetcode-solutions/tree/master/1396-count-servers-that-communicate) |
 | [1876-map-of-highest-peak](https://github.com/bytebeaver/leetcode-solutions/tree/master/1876-map-of-highest-peak) |
 | [2145-grid-game](https://github.com/bytebeaver/leetcode-solutions/tree/master/2145-grid-game) |
@@ -128,11 +131,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0854-making-a-large-island](https://github.com/bytebeaver/leetcode-solutions/tree/master/0854-making-a-large-island) |
 | [1396-count-servers-that-communicate](https://github.com/bytebeaver/leetcode-solutions/tree/master/1396-count-servers-that-communicate) |
 | [1558-course-schedule-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/1558-course-schedule-iv) |
 ## Union Find
 |  |
 | ------- |
+| [0854-making-a-large-island](https://github.com/bytebeaver/leetcode-solutions/tree/master/0854-making-a-large-island) |
 | [1396-count-servers-that-communicate](https://github.com/bytebeaver/leetcode-solutions/tree/master/1396-count-servers-that-communicate) |
 ## Graph
 |  |
