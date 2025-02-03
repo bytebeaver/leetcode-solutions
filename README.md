@@ -123,12 +123,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/0002-add-two-numbers) |
 | [0141-linked-list-cycle](https://github.com/bytebeaver/leetcode-solutions/tree/master/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0206-reverse-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0908-middle-of-the-linked-list) |
 ## Recursion
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/0002-add-two-numbers) |
 | [0206-reverse-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0206-reverse-linked-list) |
 ## Depth-First Search
 |  |
@@ -149,4 +151,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1558-course-schedule-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/1558-course-schedule-iv) |
+## Math
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
