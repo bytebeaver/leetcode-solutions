@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3227-find-missing-and-repeated-values](https://github.com/bytebeaver/leetcode-solutions/tree/master/3227-find-missing-and-repeated-values) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
+| [3348-minimum-cost-walk-in-weighted-graph](https://github.com/bytebeaver/leetcode-solutions/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 | [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3429-special-array-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/bytebeaver/leetcode-solutions/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
@@ -108,6 +109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2478-longest-nice-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/2478-longest-nice-subarray) |
 | [2509-minimize-xor](https://github.com/bytebeaver/leetcode-solutions/tree/master/2509-minimize-xor) |
 | [2792-neighboring-bitwise-xor](https://github.com/bytebeaver/leetcode-solutions/tree/master/2792-neighboring-bitwise-xor) |
+| [3348-minimum-cost-walk-in-weighted-graph](https://github.com/bytebeaver/leetcode-solutions/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 ## Two Pointers
 |  |
 | ------- |
@@ -223,10 +225,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0854-making-a-large-island](https://github.com/bytebeaver/leetcode-solutions/tree/master/0854-making-a-large-island) |
 | [1396-count-servers-that-communicate](https://github.com/bytebeaver/leetcode-solutions/tree/master/1396-count-servers-that-communicate) |
+| [3348-minimum-cost-walk-in-weighted-graph](https://github.com/bytebeaver/leetcode-solutions/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 ## Graph
 |  |
 | ------- |
 | [1558-course-schedule-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/1558-course-schedule-iv) |
+| [3348-minimum-cost-walk-in-weighted-graph](https://github.com/bytebeaver/leetcode-solutions/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 ## Topological Sort
 |  |
 | ------- |
