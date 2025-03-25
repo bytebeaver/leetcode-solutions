@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3429-special-array-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/bytebeaver/leetcode-solutions/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
+| [3657-check-if-grid-can-be-cut-into-sections](https://github.com/bytebeaver/leetcode-solutions/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 ## String
 |  |
 | ------- |
@@ -261,6 +262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0148-sort-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0148-sort-list) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
+| [3657-check-if-grid-can-be-cut-into-sections](https://github.com/bytebeaver/leetcode-solutions/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 ## Design
 |  |
 | ------- |
