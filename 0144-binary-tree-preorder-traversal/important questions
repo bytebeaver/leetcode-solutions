@@ -1,0 +1,164 @@
+# Preorder Traversal — Doubt Notes
+
+---
+
+## Q1. Why could `vector<int> ans` be declared *locally* in the iterative approach, but not in the recursive one?
+
+**Short answer:** You *can* declare it locally in recursion too, but it breaks unless you manually merge results. Here's why.
+
+### Iterative case (local vector works fine)
+```cpp
+vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> ans;   // declared ONCE
+    stack<TreeNode*> st;
+    while(...) { ... }
+    return ans;
+}
+```
+The function is called **only once** by the outside world. No recursion → `ans` is created once, filled inside the loop, and returned once. No conflicts.
+
+### Recursive case (local vector breaks)
+```cpp
+vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> ans;   // declared HERE — problem!
+    if(root) {
+        ans.push_back(root->val);
+        preorderTraversal(root->left);   // creates a BRAND NEW ans internally!
+        preorderTraversal(root->right);  // creates ANOTHER brand new ans!
+    }
+    return ans;
+}
+```
+Every call to `preorderTraversal` — including every recursive call — gets its **own separate `ans`**. They don't share memory.
+
+**Analogy:** Imagine 3 people, each given their own empty notebook (= local `ans`).
+- Root writes its own value in its notebook.
+- It calls the left-subtree function → that call gets a *brand-new* notebook, fills it, but when it returns, the root **never captures/reads** that notebook (`preorderTraversal(root->left);` return value is ignored).
+- Same story for the right call.
+
+So root's notebook ends up with only ITS own value — nothing from left/right ever gets merged in.
+
+### Fix (if you insist on local vector)
+```cpp
+vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> ans;
+    if(root) {
+        ans.push_back(root->val);
+        vector<int> leftAns  = preorderTraversal(root->left);   // capture result
+        vector<int> rightAns = preorderTraversal(root->right);  // capture result
+        ans.insert(ans.end(), leftAns.begin(), leftAns.end());  // merge manually
+        ans.insert(ans.end(), rightAns.begin(), rightAns.end());
+    }
+    return ans;
+}
+```
+Works, but clunky (extra copying/merging).
+
+### Why the class-level `ans` is used instead
+Declaring `ans` as a **member variable** (outside the function, at class scope) means every recursive call shares the **same vector in memory** — no merging needed, everyone writes into the same notebook.
+
+---
+
+## Q2. What happens if I push `root->right` onto the stack WITHOUT checking if it's `NULL`?
+
+```cpp
+if(root)
+{
+    ans.push_back(root->val);
+    st.push(root->right);   // no null check
+    root = root->left;
+}
+else
+{
+    root = st.top();
+    st.pop();
+}
+```
+
+**Nothing crashes, and the answer is still correct.** Here's why:
+
+- Pushing a `NULL` pointer onto the stack is perfectly legal — you're just storing the value `NULL`, not dereferencing it.
+- Later, when this `NULL` gets popped: `root = st.top();` → `root` becomes `NULL`.
+- On the next loop check, `if(root)` is `false` → falls into `else` again → pops the *next* real item.
+
+So the `NULL` just sits in the stack temporarily and gets silently skipped when its turn comes — **harmless, but wasteful.**
+
+### The cost of NOT checking
+1. **Wasted work** — an unnecessary `push` and later `pop` for something that does nothing.
+2. **Extra memory** — stack grows larger than necessary (holds useless `NULL` entries).
+3. Adds up in performance for large/skewed trees (more stack ops = more time & space).
+
+### Mini trace
+Tree:
+```
+    1
+     \
+      2
+```
+- root=1 → push(1's right = 2)
+- Now at node 2 (no left/right): push(2->right = NULL)
+- root = 2->left = NULL
+- Loop: root NULL → pop → root = NULL (the useless one) 
+- Loop: root NULL → pop → root = NULL (stack now empty) → wait, stack empty → loop ends
+
+No crash, no wrong output — just one useless push/pop pair.
+
+**Conclusion:** Checking `if(root->right)` before pushing is purely an **optimization**, not a correctness requirement — but it's good practice, especially since most tree nodes have missing children.
+
+---
+
+## Q3. How is the `stack<TreeNode*> st` actually implemented?
+
+`std::stack` is a **container adapter** in C++ STL — it doesn't implement its own data structure from scratch, but wraps another container to give LIFO (Last-In-First-Out) behavior.
+
+### What is LIFO?
+Like a stack of plates: you can only add (push) a plate on TOP, and only remove (pop) the plate currently on TOP. First one down is the last one picked up.
+
+### Underlying container
+By default, `std::stack` uses `std::deque` internally:
+```cpp
+stack<TreeNode*> st;                          // uses deque internally (default)
+stack<TreeNode*, vector<TreeNode*>> st2;      // force vector as underlying container
+stack<TreeNode*, list<TreeNode*>> st3;        // force linked list as underlying container
+```
+A `deque` (double-ended queue) allows efficient insertion/removal from both ends — but `stack` only ever touches ONE end (the "top"), hiding the rest of deque's flexibility.
+
+### Key operations used
+| Operation | What it does |
+|---|---|
+| `st.push(x)` | Adds `x` to the top of the stack |
+| `st.top()` | Returns (without removing) the current top value |
+| `st.pop()` | Removes the top element (returns nothing — `void`) |
+| `st.empty()` | `true` if the stack has no elements |
+
+**Important quirk:** `pop()` returns `void`, so you can't write `root = st.pop();`. You must first `top()` to read the value, then `pop()` to remove it:
+```cpp
+root = st.top();  // look at top value
+st.pop();         // then remove it
+```
+
+### Visual trace of the iterative approach
+Tree:
+```
+      1
+     / \
+    2   3
+   / \
+  4   5
+```
+
+| Step | root | Action | Stack after |
+|---|---|---|---|
+| 1 | 1 | visit 1, push(3), go left | [3] |
+| 2 | 2 | visit 2, push(5), go left | [3, 5] |
+| 3 | 4 | visit 4, push(NULL, no right child), go left | [3, 5, NULL] |
+| 4 | NULL | pop → root=NULL (wasted, harmless) | [3, 5] |
+| 5 | NULL | pop → root=5 | [3] |
+| 6 | 5 | visit 5, no right, go left | [3] |
+| 7 | NULL | pop → root=3 | [] |
+| 8 | 3 | visit 3, no right, go left | [] |
+| 9 | NULL, stack empty | loop ends | — |
+
+**Final answer:** `1, 2, 4, 5, 3` ✅ — correct preorder!
+
+The stack always returns the **most recently postponed** right child first (LIFO) — which is exactly the next node preorder needs, since preorder finishes the deepest/most recent left branch before backing up to older postponed branches.
