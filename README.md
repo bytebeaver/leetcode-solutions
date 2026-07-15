@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0078-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0078-subsets) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/bytebeaver/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
@@ -113,6 +114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0078-subsets) |
 | [1009-complement-of-base-10-integer](https://github.com/bytebeaver/leetcode-solutions/tree/master/1009-complement-of-base-10-integer) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/bytebeaver/leetcode-solutions/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2308-divide-array-into-equal-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/2308-divide-array-into-equal-pairs) |
@@ -305,6 +307,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0078-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0078-subsets) |
 | [1160-letter-tile-possibilities](https://github.com/bytebeaver/leetcode-solutions/tree/master/1160-letter-tile-possibilities) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/bytebeaver/leetcode-solutions/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/bytebeaver/leetcode-solutions/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
