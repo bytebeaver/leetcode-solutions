@@ -164,28 +164,28 @@ public:
 
 
 
-// #include <vector>
-// using namespace std;
+#include <vector>
+using namespace std;
 
-// class Solution {
-// public:
-//     int fib(int n)
-//     {
-//         int prev1 = 1;  // represents fib(1)
-//         int prev2 = 0;  // represents fib(0)
+class Solution {
+public:
+    int fib(int n)
+    {
+        int prev1 = 1;  // represents fib(1)
+        int prev2 = 0;  // represents fib(0)
 
-//         if (n == 0) return 0;
+        if (n == 0) return 0;
 
-//         for (int i = 2; i <= n; i++)
-//         {
-//             int current = prev1 + prev2;  // fib(i)
-//             prev2 = prev1;
-//             prev1 = current;
-//         }
+        for (int i = 2; i <= n; i++)
+        {
+            int current = prev1 + prev2;  // fib(i)
+            prev2 = prev1;
+            prev1 = current;
+        }
 
-//         return prev1;
-//     }
-// };
+        return prev1;
+    }
+};
 
 
 // Algorithm (Example ke saath samjhte hai)
