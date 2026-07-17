@@ -46,68 +46,68 @@
     ================================================================
 */
 
-#include <vector>
-using namespace std;
+// #include <vector>
+// using namespace std;
 
-class Solution {
-public:
+// class Solution {
+// public:
 
-    // ----------------------------------------------------------
-    // Helper function that does the actual recursive + memoized
-    // computation. Takes 'n' (which Fibonacci number we want) and
-    // a reference to the dp array (passed by reference so we don't
-    // copy the whole array on every single recursive call — that
-    // would be wasteful).
-    // ----------------------------------------------------------
-    int fibonacci(int n, vector<int> &dp)
-    {
-        // ---- BASE CASE ----
-        // Fibonacci is defined as fib(0) = 0, fib(1) = 1.
-        // This is where the recursion "bottoms out" and stops
-        // calling itself further.
-        if (n <= 1) return n;
+//     // ----------------------------------------------------------
+//     // Helper function that does the actual recursive + memoized
+//     // computation. Takes 'n' (which Fibonacci number we want) and
+//     // a reference to the dp array (passed by reference so we don't
+//     // copy the whole array on every single recursive call — that
+//     // would be wasteful).
+//     // ----------------------------------------------------------
+//     int fibonacci(int n, vector<int> &dp)
+//     {
+//         // ---- BASE CASE ----
+//         // Fibonacci is defined as fib(0) = 0, fib(1) = 1.
+//         // This is where the recursion "bottoms out" and stops
+//         // calling itself further.
+//         if (n <= 1) return n;
 
-        // ---- STEP 2: CHECKING ----
-        // Before doing any fresh work, ask: "have I already solved
-        // this exact subproblem before?"
-        // dp[n] != -1 means YES, it's already been solved and
-        // stored — so just hand back the stored answer instantly,
-        // skipping recomputation entirely. This single check is
-        // what collapses O(2^n) recursion down to O(n).
-        if (dp[n] != -1) return dp[n];
+//         // ---- STEP 2: CHECKING ----
+//         // Before doing any fresh work, ask: "have I already solved
+//         // this exact subproblem before?"
+//         // dp[n] != -1 means YES, it's already been solved and
+//         // stored — so just hand back the stored answer instantly,
+//         // skipping recomputation entirely. This single check is
+//         // what collapses O(2^n) recursion down to O(n).
+//         if (dp[n] != -1) return dp[n];
 
-        // ---- RECURSIVE RELATION ----
-        // If we haven't solved it yet, break the problem into two
-        // smaller subproblems (this is the actual Fibonacci
-        // recurrence: fib(n) = fib(n-1) + fib(n-2)), solve those
-        // recursively (they'll use their own memo checks too), and
-        // combine their results.
-        //
-        // ---- STEP 3: STORAGE ----
-        // Immediately store the freshly computed result in dp[n]
-        // BEFORE returning. This is what future calls will find
-        // and reuse in Step 2 above.
-        dp[n] = fibonacci(n - 1, dp) + fibonacci(n - 2, dp);
+//         // ---- RECURSIVE RELATION ----
+//         // If we haven't solved it yet, break the problem into two
+//         // smaller subproblems (this is the actual Fibonacci
+//         // recurrence: fib(n) = fib(n-1) + fib(n-2)), solve those
+//         // recursively (they'll use their own memo checks too), and
+//         // combine their results.
+//         //
+//         // ---- STEP 3: STORAGE ----
+//         // Immediately store the freshly computed result in dp[n]
+//         // BEFORE returning. This is what future calls will find
+//         // and reuse in Step 2 above.
+//         dp[n] = fibonacci(n - 1, dp) + fibonacci(n - 2, dp);
 
-        return dp[n];
-    }
+//         return dp[n];
+//     }
 
-    int fib(int n)
-    {
-        // ---- STEP 1: DECLARATION ----
-        // Create a dp array of size (n+1) — indices 0 through n —
-        // so we have a slot to store the answer for every possible
-        // subproblem from fib(0) up to fib(n).
-        // Every slot starts as -1, meaning "not solved yet".
-        vector<int> dp(n + 1, -1);
+//     int fib(int n)
+//     {
+//         // ---- STEP 1: DECLARATION ----
+//         // Create a dp array of size (n+1) — indices 0 through n —
+//         // so we have a slot to store the answer for every possible
+//         // subproblem from fib(0) up to fib(n).
+//         // Every slot starts as -1, meaning "not solved yet".
+//         vector<int> dp(n + 1, -1);
 
-        // Kick off the recursion. This call will internally build
-        // up dp[] from the smallest subproblems upward (even
-        // though it LOOKS top-down, the base cases get hit first
-        // as the recursion unwinds).
-        return fibonacci(n, dp);
-    }
-};
+//         // Kick off the recursion. This call will internally build
+//         // up dp[] from the smallest subproblems upward (even
+//         // though it LOOKS top-down, the base cases get hit first
+//         // as the recursion unwinds).
+//         return fibonacci(n, dp);
+//     }
+// };
 
 /*
     ================================================================
@@ -161,3 +161,31 @@ public:
       practice once this feels solid.
     ================================================================
 */
+
+
+
+#include <vector>
+using namespace std;
+
+class Solution {
+public:
+
+    int fib(int n)
+    {
+       int prev1=1;
+       int prev2=0;
+
+    if(n==0)return 0;
+       int temp;
+       
+       for(int i=2; i<=n;i++)
+       {
+        temp=prev1;
+        prev1=prev1+prev2;
+        prev2=temp;
+       }
+
+       return prev1;
+    }
+};
+
