@@ -261,6 +261,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/0002-add-two-numbers) |
+| [0070-climbing-stairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0070-climbing-stairs) |
 | [0509-fibonacci-number](https://github.com/bytebeaver/leetcode-solutions/tree/master/0509-fibonacci-number) |
 | [1477-product-of-the-last-k-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/1477-product-of-the-last-k-numbers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -331,6 +332,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0070-climbing-stairs) |
 | [0509-fibonacci-number](https://github.com/bytebeaver/leetcode-solutions/tree/master/0509-fibonacci-number) |
 | [1170-shortest-common-supersequence](https://github.com/bytebeaver/leetcode-solutions/tree/master/1170-shortest-common-supersequence) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
@@ -360,5 +362,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Memoization
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0070-climbing-stairs) |
 | [0509-fibonacci-number](https://github.com/bytebeaver/leetcode-solutions/tree/master/0509-fibonacci-number) |
 <!---LeetCode Topics End-->
