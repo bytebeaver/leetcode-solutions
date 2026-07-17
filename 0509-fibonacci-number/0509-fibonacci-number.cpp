@@ -1,19 +1,163 @@
+/*
+    ================================================================
+    PROBLEM: Nth Fibonacci Number
+    APPROACH USED: Top-Down Dynamic Programming (Memoization)
+    ================================================================
+
+    WHAT IS DP, REALLY?
+    --------------------
+    Dynamic Programming = Recursion + Remembering answers you've
+    already calculated, so you never redo the same work twice.
+
+    Think of it like this: if a friend asks you "what's 5+5?" ten
+    times in a row, you don't recalculate it every time — you just
+    remember "oh that's 10" and answer instantly. That's exactly
+    what memoization does for recursive calls.
+
+    WHY FIBONACCI NEEDS THIS
+    -------------------------
+    Plain recursion for fib(n) branches into fib(n-1) and fib(n-2).
+    Those branch further, and you end up recalculating the SAME
+    smaller Fibonacci values again and again (e.g. fib(2) might get
+    computed hundreds of times inside fib(30)). This causes an
+    exponential blow-up: O(2^n) time.
+
+    Memoization fixes this by storing the result of each subproblem
+    (each unique value of n) the FIRST time it's computed, in an
+    array called "dp". Next time that same n is needed, we just
+    look it up instead of recomputing — turning exponential time
+    into linear time.
+
+    THE 3 STEPS OF MEMOIZATION (this is the core pattern, memorize
+    this shape — you'll use it in almost every DP problem):
+
+    1) DECLARATION: Create a storage array (dp) big enough to hold
+       an answer for every possible subproblem, initialized to a
+       "not computed yet" sentinel value (here we use -1, since
+       actual Fibonacci numbers are never negative).
+
+    2) CHECKING: Before doing any real computation for a
+       subproblem, check if dp[n] already has a real answer stored.
+       If yes, return it immediately — this is what saves us time.
+
+    3) STORAGE: After computing the answer for a subproblem for the
+       first time, store it in dp[n] before returning, so future
+       calls can reuse it.
+    ================================================================
+*/
+
+#include <vector>
+using namespace std;
+
 class Solution {
 public:
 
-    int fibonacci(int n , vector<int> &dp)
+    // ----------------------------------------------------------
+    // Helper function that does the actual recursive + memoized
+    // computation. Takes 'n' (which Fibonacci number we want) and
+    // a reference to the dp array (passed by reference so we don't
+    // copy the whole array on every single recursive call — that
+    // would be wasteful).
+    // ----------------------------------------------------------
+    int fibonacci(int n, vector<int> &dp)
     {
-        if(n<=1) return n;
+        // ---- BASE CASE ----
+        // Fibonacci is defined as fib(0) = 0, fib(1) = 1.
+        // This is where the recursion "bottoms out" and stops
+        // calling itself further.
+        if (n <= 1) return n;
 
-        //checking if subproblem is already computer or not
-        if(dp[n]!=-1)  return dp[n];
+        // ---- STEP 2: CHECKING ----
+        // Before doing any fresh work, ask: "have I already solved
+        // this exact subproblem before?"
+        // dp[n] != -1 means YES, it's already been solved and
+        // stored — so just hand back the stored answer instantly,
+        // skipping recomputation entirely. This single check is
+        // what collapses O(2^n) recursion down to O(n).
+        if (dp[n] != -1) return dp[n];
 
-        dp[n]=fibonacci(n-1, dp) + fibonacci(n-2, dp);
+        // ---- RECURSIVE RELATION ----
+        // If we haven't solved it yet, break the problem into two
+        // smaller subproblems (this is the actual Fibonacci
+        // recurrence: fib(n) = fib(n-1) + fib(n-2)), solve those
+        // recursively (they'll use their own memo checks too), and
+        // combine their results.
+        //
+        // ---- STEP 3: STORAGE ----
+        // Immediately store the freshly computed result in dp[n]
+        // BEFORE returning. This is what future calls will find
+        // and reuse in Step 2 above.
+        dp[n] = fibonacci(n - 1, dp) + fibonacci(n - 2, dp);
 
         return dp[n];
     }
-    int fib(int n) {
-        vector<int> dp(n+1, -1);
+
+    int fib(int n)
+    {
+        // ---- STEP 1: DECLARATION ----
+        // Create a dp array of size (n+1) — indices 0 through n —
+        // so we have a slot to store the answer for every possible
+        // subproblem from fib(0) up to fib(n).
+        // Every slot starts as -1, meaning "not solved yet".
+        vector<int> dp(n + 1, -1);
+
+        // Kick off the recursion. This call will internally build
+        // up dp[] from the smallest subproblems upward (even
+        // though it LOOKS top-down, the base cases get hit first
+        // as the recursion unwinds).
         return fibonacci(n, dp);
     }
 };
+
+/*
+    ================================================================
+    COMPLEXITY ANALYSIS
+    ================================================================
+
+    TIME COMPLEXITY: O(n)
+    ----------------------
+    Without memoization, plain recursive Fibonacci makes 2 calls
+    per call, doubling roughly every level -> O(2^n), which is
+    brutally slow (fib(40) alone would take billions of calls).
+
+    WITH memoization: each value from 0 to n gets computed EXACTLY
+    ONCE (thanks to the dp[n] != -1 check blocking repeat work).
+    Once computed, every future request for that value is an O(1)
+    array lookup. Since there are only (n+1) unique subproblems
+    total, and each is solved once in O(1) work (excluding its
+    recursive calls, which are themselves counted separately),
+    total time = O(n).
+
+    SPACE COMPLEXITY: O(n)
+    ------------------------
+    Two contributors, both linear in n:
+      1) The dp array itself: size (n+1) -> O(n).
+      2) The recursion call stack: in the worst case (going from
+         fib(n) down to fib(1) via the fib(n-1) chain before ever
+         hitting fib(n-2)), the stack can be n frames deep -> O(n).
+    Combined, still O(n) overall (constants don't matter in Big-O).
+
+    ================================================================
+    INTUITION MAP: How this connects to DP as a general idea
+    ================================================================
+    - "Overlapping subproblems": fib(n-2) gets asked for by BOTH
+      fib(n) directly and indirectly through fib(n-1)'s own call to
+      fib(n-2)... wait, actually more precisely: fib(n-1) and
+      fib(n) both eventually need fib(n-3), fib(n-4), etc. This
+      overlap is WHY memoization helps at all — if every subproblem
+      were only ever needed once, memoizing would save nothing.
+
+    - "Optimal substructure": fib(n) is built purely from the
+      answers to fib(n-1) and fib(n-2) — no other information is
+      needed. This is what lets us define that clean recursive
+      relation dp[n] = fib(n-1) + fib(n-2) in the first place.
+
+    - This exact pattern (recursion + check dp + store in dp) is
+      called TOP-DOWN DP / Memoization. Later you'll also learn
+      BOTTOM-UP DP (Tabulation), where instead of recursing from n
+      downward, you build dp[0], dp[1], ... dp[n] in a simple loop
+      from the ground up. Same idea, opposite direction — worth
+      trying to convert this solution into a loop-based version as
+      practice once this feels solid.
+    ================================================================
+*/
