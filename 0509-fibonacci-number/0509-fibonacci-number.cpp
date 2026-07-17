@@ -176,13 +176,13 @@ public:
        int prev2=0;
 
     if(n==0)return 0;
-       int temp;
+     
        
        for(int i=2; i<=n;i++)
        {
-        temp=prev1;
-        prev1=prev1+prev2;
-        prev2=temp;
+         int current_i_ka_fibonacci= prev1 + prev2;
+         prev2 = prev1;
+         prev1=current_i_ka_fibonacci;
        }
 
        return prev1;
