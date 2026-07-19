@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/bytebeaver/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0198-house-robber](https://github.com/bytebeaver/leetcode-solutions/tree/master/0198-house-robber) |
+| [0213-house-robber-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0213-house-robber-ii) |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
 | [0854-making-a-large-island](https://github.com/bytebeaver/leetcode-solutions/tree/master/0854-making-a-large-island) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
@@ -335,6 +336,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0070-climbing-stairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/bytebeaver/leetcode-solutions/tree/master/0198-house-robber) |
+| [0213-house-robber-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0213-house-robber-ii) |
 | [0509-fibonacci-number](https://github.com/bytebeaver/leetcode-solutions/tree/master/0509-fibonacci-number) |
 | [1170-shortest-common-supersequence](https://github.com/bytebeaver/leetcode-solutions/tree/master/1170-shortest-common-supersequence) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
