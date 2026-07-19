@@ -35,12 +35,10 @@
 //     }
 // };
 
-
-
 class Solution {
 public:
     int rob(vector<int>& nums) {
-        
+
         int n = nums.size();
 
         if(n==1)
@@ -49,18 +47,23 @@ public:
         if(n==2)
         return max(nums[0], nums[1]);
 
-        int v1 = nums[0];
-        int v2= nums[1];
+        int prev = nums[0];
 
-        for(int i=2; i<n; i++)
+        int prev2 = 0;
+
+        for(int i=1; i<n; i++)
         {
-            int take = nums[i] + v1;
-            int not_take = 0 + v2;
-            v1 = max(v1,not_take);
-            v2= max(v2,take);
+            int take = nums[i] + prev2;
+
+            int not_take = 0 + prev;
+
+            int current_i = max(take, not_take);
+            prev2=prev;
+            prev=current_i;
+
+
         }
 
-        return max(v1,v2);
-    
+       return prev;
     }
 };
