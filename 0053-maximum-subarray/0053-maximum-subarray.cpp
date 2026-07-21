@@ -10,9 +10,11 @@ public:
         for(int i=1; i<n; i++)
         {
             //we have two choices to get the best ending at current_i 
-            int best_till_prev_index = best_ending_so_far;
 
-            best_ending_so_far = max(nums[i], nums[i] + best_till_prev_index);
+            int v1 = best_ending_so_far + nums[i];
+            int v2 =  nums[i];
+
+            best_ending_so_far = max(v1, v2);
 
             result = max(result, best_ending_so_far);
 
