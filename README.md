@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0952-word-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0952-word-subsets) |
 | [0977-squares-of-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0977-squares-of-a-sorted-array) |
+| [1186-maximum-subarray-sum-with-one-deletion](https://github.com/bytebeaver/leetcode-solutions/tree/master/1186-maximum-subarray-sum-with-one-deletion) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/bytebeaver/leetcode-solutions/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1364-tuple-with-same-product](https://github.com/bytebeaver/leetcode-solutions/tree/master/1364-tuple-with-same-product) |
 | [1396-count-servers-that-communicate](https://github.com/bytebeaver/leetcode-solutions/tree/master/1396-count-servers-that-communicate) |
@@ -346,6 +347,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0213-house-robber-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0213-house-robber-ii) |
 | [0509-fibonacci-number](https://github.com/bytebeaver/leetcode-solutions/tree/master/0509-fibonacci-number) |
 | [1170-shortest-common-supersequence](https://github.com/bytebeaver/leetcode-solutions/tree/master/1170-shortest-common-supersequence) |
+| [1186-maximum-subarray-sum-with-one-deletion](https://github.com/bytebeaver/leetcode-solutions/tree/master/1186-maximum-subarray-sum-with-one-deletion) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/bytebeaver/leetcode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Number Theory
