@@ -36,7 +36,7 @@ public:
             return arr[0];
 
         int no_delete = arr[0];
-        int one_delete = arr[1];
+        int one_delete = INT_MIN;
 
         int result = max(no_delete, one_delete);
 
