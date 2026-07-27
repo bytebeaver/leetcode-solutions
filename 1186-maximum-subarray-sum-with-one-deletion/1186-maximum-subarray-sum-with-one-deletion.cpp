@@ -47,7 +47,7 @@ public:
 
             if (i == 1)
             {
-                one_delete = max(prev_one_delete, prev_no_delete);   // max(arr[1], arr[0])
+                one_delete = max(arr[1], prev_no_delete);   // max(arr[1], arr[0])
             }
             else
             {
