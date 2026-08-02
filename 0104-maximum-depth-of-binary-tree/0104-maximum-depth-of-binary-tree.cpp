@@ -12,21 +12,15 @@
 class Solution {
 public:
 
-    int Depth(TreeNode* root, int depth)
-    {
-        if(!root) return depth-1;
-
-        depth = max( 1 + Depth(root->left, depth) , 1 + Depth(root->right, depth) ) ;
-        
-        return depth;
-    }
+    
     int maxDepth(TreeNode* root) {
         
         if(!root) return 0;
 
-        int depth = 1;
-        return Depth(root, depth);
-
+        int lh = maxDepth(root->left);
+        int rh = maxDepth(root->right);
+        
+        return 1 + max(lh, rh);
 
     }
 };
