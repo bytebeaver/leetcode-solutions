@@ -1,94 +1,42 @@
-// class Solution {
-// public:
-//     int maxforAlice(vector<int> &stoneValue,int n,  int person , int i  , vector<vector<vector<int>>> &t, int j )
-//     {
-//         if(i>=n) return 0;
-        
-//         if(t[person][i][j] != INT_MIN) return t[person][i][j];
-
-//         int result = (person == 1)? INT_MIN: INT_MAX;
-
-//         int stones = 0;
-
-//         for(int x = 1 ; x <= min( (n-i) , 3); x++)
-//         {
-//             stones += stoneValue[i+x-1];
-            
-//             if(person == 1)
-//              result = max(result, stones + maxforAlice(stoneValue, n, 0, i+x, t ,x) );
-
-//              else if(person == 0)
-//              result = min(result,          maxforAlice(stoneValue, n, 1, i+x, t ,x) );
-
-//         }
-
-//     return t[person][i][j]= result;
-
-//     }
-//     string stoneGameIII(vector<int>& stoneValue) {
-        
-//         int n = stoneValue.size();
-        
-//         int person = 1;
-//         int i =0;
-//         int j=1;
-
-//             vector<vector<vector<int>>> t(2, vector<vector<int>>(n, vector<int>(4, INT_MIN)));
-
-
-//         int alice =  maxforAlice(stoneValue,n, person, i, t, j);
-
-//         int sum =0;
-//         for(int i=0; i<n; i++)
-//         {
-//             sum += stoneValue[i];
-//         }
-
-//         if(alice > sum-alice)
-//         return "Alice";
-
-//         else if(alice == sum-alice)
-//         return "Tie";
-
-//     return "Bob";
-//     }
-// };
-
-
-
 class Solution {
 public:
     int n;
-    vector<int> t;
+    vector<int> t;  // memo: t[i] = best (currentPlayer - otherPlayer) diff starting from index i
 
-    int difference( vector<int> & stoneValue, int i)
+    int difference(vector<int> &stoneValue, int i)
     {
-        if(i>= n) return 0;
+        // saare stones utha liye -> koi score contribute nahi hoga
+        if (i >= n) return 0;
 
-         
-        if(t[i] != -1) return t[i];
-        
+        // already computed hai to seedha return karo
+        if (t[i] != -1) return t[i];
 
-        int diff =  stoneValue[i] - difference(stoneValue, i+1);
+        // option 1: sirf 1 stone lo
+        // apna gain - (baaki game mein opponent jo best diff nikaalega)
+        int diff = stoneValue[i] - difference(stoneValue, i + 1);
 
-        if(i+1<n)
-        diff = max(diff , stoneValue[i] + stoneValue[i+1]  - difference(stoneValue, i+2));
+        // option 2: 2 stones lo (sirf tabhi valid jab i+1 array ke andar ho)
+        if (i + 1 < n)
+            diff = max(diff, stoneValue[i] + stoneValue[i + 1] - difference(stoneValue, i + 2));
 
-        if(i+2<n)
-        diff = max(diff , stoneValue[i] + stoneValue[i+1] + stoneValue[i+2] - difference(stoneValue, i+3));
+        // option 3: 3 stones lo (sirf tabhi valid jab i+2 array ke andar ho)
+        if (i + 2 < n)
+            diff = max(diff, stoneValue[i] + stoneValue[i + 1] + stoneValue[i + 2] - difference(stoneValue, i + 3));
 
-
-        return t[i]=diff;
-
+        // best diff store karo aur return karo
+        return t[i] = diff;
     }
-    string stoneGameIII(vector<int>& stoneValue) {
-        
-         n = stoneValue.size();
-         t.resize(n+1, -1);
-         int diff = difference(stoneValue, 0);
 
-         if(diff < 0) return "Bob";
-         else if(diff > 0) return "Alice";
+    string stoneGameIII(vector<int>& stoneValue)
+    {
+        n = stoneValue.size();
+        t.resize(n + 1, -1);   // n+1 size taaki i == n (base case) bhi safely fit ho
+
+        // Alice pehle move leti hai (i=0), so diff(0) = Alice's score - Bob's score
+        int diff = difference(stoneValue, 0);
+
+        if (diff > 0) return "Alice";
+        else if (diff < 0) return "Bob";
 
         return "Tie";
     }
