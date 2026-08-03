@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/bytebeaver/leetcode-solutions/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1364-tuple-with-same-product](https://github.com/bytebeaver/leetcode-solutions/tree/master/1364-tuple-with-same-product) |
 | [1396-count-servers-that-communicate](https://github.com/bytebeaver/leetcode-solutions/tree/master/1396-count-servers-that-communicate) |
+| [1406-stone-game-iii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1406-stone-game-iii) |
 | [1477-product-of-the-last-k-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/1477-product-of-the-last-k-numbers) |
 | [1524-string-matching-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/1524-string-matching-in-an-array) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/bytebeaver/leetcode-solutions/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
@@ -287,6 +288,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0509-fibonacci-number](https://github.com/bytebeaver/leetcode-solutions/tree/master/0509-fibonacci-number) |
 | [0877-stone-game](https://github.com/bytebeaver/leetcode-solutions/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1140-stone-game-ii) |
+| [1406-stone-game-iii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1406-stone-game-iii) |
 | [1477-product-of-the-last-k-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/1477-product-of-the-last-k-numbers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2448-count-number-of-bad-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/2448-count-number-of-bad-pairs) |
@@ -377,6 +379,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1140-stone-game-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1140-stone-game-ii) |
 | [1170-shortest-common-supersequence](https://github.com/bytebeaver/leetcode-solutions/tree/master/1170-shortest-common-supersequence) |
 | [1186-maximum-subarray-sum-with-one-deletion](https://github.com/bytebeaver/leetcode-solutions/tree/master/1186-maximum-subarray-sum-with-one-deletion) |
+| [1406-stone-game-iii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1406-stone-game-iii) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/bytebeaver/leetcode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Number Theory
@@ -416,12 +419,15 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0486-predict-the-winner](https://github.com/bytebeaver/leetcode-solutions/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/bytebeaver/leetcode-solutions/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1140-stone-game-ii) |
+| [1406-stone-game-iii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1406-stone-game-iii) |
 ## Minimax
 |  |
 | ------- |
 | [1140-stone-game-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1140-stone-game-ii) |
+| [1406-stone-game-iii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1406-stone-game-iii) |
 ## Zero-Sum Game
 |  |
 | ------- |
 | [1140-stone-game-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1140-stone-game-ii) |
+| [1406-stone-game-iii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1406-stone-game-iii) |
 <!---LeetCode Topics End-->
