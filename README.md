@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3429-special-array-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/bytebeaver/leetcode-solutions/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/bytebeaver/leetcode-solutions/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
+| [3731-find-missing-elements](https://github.com/bytebeaver/leetcode-solutions/tree/master/3731-find-missing-elements) |
 ## String
 |  |
 | ------- |
@@ -124,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/bytebeaver/leetcode-solutions/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/bytebeaver/leetcode-solutions/tree/master/3455-minimum-length-of-string-after-operations) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
+| [3731-find-missing-elements](https://github.com/bytebeaver/leetcode-solutions/tree/master/3731-find-missing-elements) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -320,6 +322,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2888-minimum-index-of-a-valid-split](https://github.com/bytebeaver/leetcode-solutions/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/3517-smallest-palindromic-rearrangement-i) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/bytebeaver/leetcode-solutions/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
+| [3731-find-missing-elements](https://github.com/bytebeaver/leetcode-solutions/tree/master/3731-find-missing-elements) |
 ## Design
 |  |
 | ------- |
