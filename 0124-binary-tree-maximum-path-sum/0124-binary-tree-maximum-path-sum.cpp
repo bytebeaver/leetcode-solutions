@@ -36,8 +36,8 @@ public:
         
         if(!root) return 0;
         
-        int v1 = pathSum_Maxi(root);
-        if(v1<0) return root->val;
+        pathSum_Maxi(root);
+        
         return result;
 
     }
