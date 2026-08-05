@@ -11,48 +11,41 @@
  */
 class Solution {
 public:
-    map <int, int> mp;
+    map<int,int> mp; // value -> index in inorder, for O(1) root lookup
 
+    TreeNode* BuildTree(vector<int>& preorder, int pre_start, int pre_end,
+                         vector<int>& inorder, int inorder_start, int inorder_end) {
 
-    TreeNode *BuildTree( vector<int> preorder,int  pre_start, int pre_end, vector<int> inorder, int inorder_start , int inorder_end )
-    {
-        if(pre_start > pre_end || inorder_start > inorder_end)
-        return nullptr;
+        // base case: no elements left in this range
+        if (pre_start > pre_end || inorder_start > inorder_end)
+            return nullptr;
 
-        TreeNode *root = new TreeNode (preorder[pre_start]);
+        // preorder's first element in this range = root of this subtree
+        TreeNode* root = new TreeNode(preorder[pre_start]);
 
-        int index_of_root_in_inorder = mp[root->val];
+        // find root's position in inorder using map (O(1))
+        int rootIdx = mp[root->val];
 
-        int number_of_nums_to_the_left_of_root_in_inorder = index_of_root_in_inorder - inorder_start;
+        // elements to left of root in inorder = size of left subtree
+        int leftSize = rootIdx - inorder_start;
 
-        root->left = BuildTree(preorder, pre_start + 1, pre_start + number_of_nums_to_the_left_of_root_in_inorder  , inorder ,   
-         inorder_start, index_of_root_in_inorder - 1);      
+        // build left subtree: preorder shifts by 1, inorder is left of rootIdx
+        root->left = BuildTree(preorder, pre_start + 1, pre_start + leftSize,
+                                inorder, inorder_start, rootIdx - 1);
 
-          root->right = BuildTree(preorder, pre_start + number_of_nums_to_the_left_of_root_in_inorder + 1 , pre_end  , inorder ,   
-         index_of_root_in_inorder + 1, inorder_end);
+        // build right subtree: preorder starts after left part, inorder is right of rootIdx
+        root->right = BuildTree(preorder, pre_start + leftSize + 1, pre_end,
+                                 inorder, rootIdx + 1, inorder_end);
 
-
-         return root;                               
+        return root;
     }
 
-
-
-
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-        
-        for(int i=0; i<inorder.size(); i++)
-        {
-            mp[ inorder[i] ] =i;
-        }
-        
-        int pre_start = 0;
-        int pre_end = preorder.size() -1;
+        // precompute value->index map for O(1) root lookup
+        for (int i = 0; i < inorder.size(); i++)
+            mp[inorder[i]] = i;
 
-        int inorder_start = 0;
-        int inorder_end = inorder.size()-1;
-
-        return  BuildTree(preorder , pre_start, pre_end, inorder, inorder_start, inorder_end);
-
-
+        return BuildTree(preorder, 0, preorder.size()-1,
+                          inorder, 0, inorder.size()-1);
     }
 };
