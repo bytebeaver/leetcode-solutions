@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-    map<int,int> mp; // value -> index in inorder, for O(1) root lookup
+    unordered_map<int,int> mp; // value -> index in inorder, for O(1) root lookup
 
     TreeNode* BuildTree(vector<int>& preorder, int pre_start, int pre_end,
                          vector<int>& inorder, int inorder_start, int inorder_end) {
