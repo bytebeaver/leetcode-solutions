@@ -1,32 +1,67 @@
 class Solution {
  public:
   vector<int> validSequence(string word1, string word2) {
-    vector<int> ans(word2.length());
-    // last[j] := the index i of the last occurrence in word1, where
-    // word1[i] == word2[j]
-    vector<int> last(word2.length(), -1);
+   
+   int n = word1.length();
+   int m = word2.length();
 
-    int i = word1.length() - 1;
-    int j = word2.length() - 1;
-    while (i >= 0 && j >= 0) {
-      if (word1[i] == word2[j])
-        last[j--] = i;
-      --i;
+   vector<int> rightHandsideMatch(n,0);
+    
+    int i=n-1;
+    int j=m-1;
+
+    int match =0;
+   while(i>=0)
+   {
+        if(j>=0 && word1[i] == word2[j])
+        {
+            match++;
+            rightHandsideMatch[i] = match;
+            i--; j--;
+        }
+
+        else{
+             rightHandsideMatch[i] = match;
+             i--;
+        }
     }
 
-    bool canSkip = true;
-    j = 0;
-    for (i = 0; i < word1.length(); ++i) {
-      if (j == word2.length())
-        break;
-      if (word1[i] == word2[j]) {
-        ans[j++] = i;
-      } else if (canSkip && (j == word2.length() - 1 || i < last[j + 1])) {
-        canSkip = false;
-        ans[j++] = i;
-      }
+
+    i=0;
+    j=0;
+    vector<int> seq;
+    bool changePower = true;
+    while(i<n && j<m)
+    {
+        if(word1[i] == word2[j])
+        {
+            seq.push_back(i);
+            i++;
+            j++;
+        }
+
+        else if(word1[i] != word2[j])
+        {   
+        
+            if(changePower &&  i!= n-1 && rightHandsideMatch[i+1] >= (m-1) - j) //can i write rightHandsideMatch[i+1] == (m-1) - j) because i thinl it cannot be greater  also since i is going upto n-1 and i am trying to access i+1 index should i take care of this condition as well 
+            {
+                //we can use the power ----and change the char in word1
+                // word1[i] = word2[j]; ---this step is not necessary as we only need index
+
+                seq.push_back(i);
+                changePower = false;
+                i++;
+                j++;
+
+            }
+
+            else
+            i++;
+        }
+
     }
 
-    return j == word2.length() ? ans : vector<int>();
+    return (j==m) ? seq : vector<int>();
+    
   }
 };
