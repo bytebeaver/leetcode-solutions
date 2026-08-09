@@ -9,50 +9,43 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+ 
 class Solution {
 public:
-    // Morris Inorder Traversal — O(1) extra space, no stack/recursion needed.
-    // Idea: temporarily create a "thread" (fake link) from the rightmost node
-    // of the left subtree back to the current node, so that once we finish
-    // the left subtree we can automatically come back up to current
-    // without needing a stack.
-    vector<int> inorderTraversal(TreeNode* root) {
-        
-        TreeNode *curr = root;      // pointer walking through the tree
-        vector<int> inorder;        // stores final inorder result
+vector<int> inorderTraversal(TreeNode* root) {
+    TreeNode *curr = root;
+    vector<int> inorder;
 
-        while (curr) {
+    while (curr) {
 
-            if (curr->left != nullptr) {
-                // Left subtree exists, so find its INORDER PREDECESSOR
-                // (rightmost node of left subtree) — this is the node
-                // that should be visited just before "curr"
-                TreeNode* predecessor = curr->left;
+        if (curr->left == nullptr) {
+            // Left subtree nahi hai -> seedha visit karo aur right pe chale jao
+            inorder.push_back(curr->val);
+            curr = curr->right;
+        }
+        else {
+            // Left subtree hai -> predecessor (rightmost node) dhoondo
+            TreeNode* predecessor = curr->left;
 
-                while (predecessor->right != nullptr)
-                    predecessor = predecessor->right;
+            //  dono conditions check ho rahi hain
+            while (predecessor->right != nullptr && predecessor->right != curr)
+                predecessor = predecessor->right;
 
-                // create a temporary thread: predecessor -> curr
-                // this lets us "return" to curr after finishing left subtree
+            if (predecessor->right == nullptr) {
+                // PEHLI BAAR is subtree pe aaye ho -> thread banao, left mein jao
                 predecessor->right = curr;
-            }
-
-            if (curr->left != nullptr) {
-                // move into left subtree (thread is already set up above)
-                TreeNode* leftChild = curr->left;
-
-                curr->left = nullptr;   // cut original left link (mark as visited/processed)
-                curr = leftChild;       // move left
+                curr = curr->left;
             }
             else {
-                // no left subtree left to explore ->
-                // either it's a true leaf-ish node, OR we just arrived here
-                // via the thread created earlier (predecessor->right = curr)
-                inorder.push_back(curr->val);  // visit current node
-                curr = curr->right;            // move right (real right child OR thread back up)
+                // DOOSRI BAAR aaye ho (thread se wapas) -> thread HATAO (restore!), visit karo
+                predecessor->right = nullptr;
+                inorder.push_back(curr->val);
+                curr = curr->right;
             }
         }
-
-        return inorder;
     }
+
+    return inorder;
+}
 };
