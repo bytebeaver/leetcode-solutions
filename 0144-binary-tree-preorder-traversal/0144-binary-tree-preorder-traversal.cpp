@@ -14,37 +14,36 @@
 class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
-        
         TreeNode *current = root;
         vector<int> preorder;
-        while(current)
-        {
-            if(current->left == nullptr)
-            {
+
+        while (current) { // jab tak current null na ho
+            
+            if (current->left == nullptr) { 
+                // no left subtree -> push karo aur right pe chale jao
                 preorder.push_back(current->val);
-                current= current->right;
-            }
-            else if(current->left != nullptr)
-            {
+                current = current->right;
+            } 
+            else {
+                // left subtree exist karta hai, predecessor dhoondo
                 TreeNode *leftchild = current->left;
 
-                while(leftchild -> right != nullptr && leftchild->right != current)
-                leftchild = leftchild->right;
+                // rightmost node of left subtree tak jao (ya thread mil jaaye)
+                while (leftchild->right != nullptr && leftchild->right != current)
+                    leftchild = leftchild->right;
 
-                if(leftchild->right == nullptr)
-                {
+                if (leftchild->right == nullptr) { 
+                    // thread nahi bani -> banao aur PREORDER mein push karo abhi
                     leftchild->right = current;
-                    preorder.push_back(current->val);
-                    current = current->left;
-                }
-
-                if(leftchild ->right == current)
-                {
-                    leftchild ->right = nullptr;
-                    current =  current->right;
+                    preorder.push_back(current->val); // preorder ki key trick
+                    current = current->left; // left explore karo
+                } 
+                else { 
+                    // thread already bani -> left fully visited, ab unthread karo
+                    leftchild->right = nullptr;
+                    current = current->right; // right subtree pe jao
                 }
             }
-
         }
 
         return preorder;
