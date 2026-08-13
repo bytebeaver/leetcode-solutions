@@ -55,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2691-count-vowel-strings-in-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/bytebeaver/leetcode-solutions/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2792-neighboring-bitwise-xor](https://github.com/bytebeaver/leetcode-solutions/tree/master/2792-neighboring-bitwise-xor) |
+| [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2850-minimum-moves-to-spread-stones-over-grid) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/bytebeaver/leetcode-solutions/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3227-find-missing-and-repeated-values](https://github.com/bytebeaver/leetcode-solutions/tree/master/3227-find-missing-and-repeated-values) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/3309-count-prefix-and-suffix-pairs-i) |
@@ -144,6 +145,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2478-longest-nice-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/2478-longest-nice-subarray) |
 | [2509-minimize-xor](https://github.com/bytebeaver/leetcode-solutions/tree/master/2509-minimize-xor) |
 | [2792-neighboring-bitwise-xor](https://github.com/bytebeaver/leetcode-solutions/tree/master/2792-neighboring-bitwise-xor) |
+| [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2850-minimum-moves-to-spread-stones-over-grid) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/bytebeaver/leetcode-solutions/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 ## Two Pointers
 |  |
@@ -241,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1876-map-of-highest-peak](https://github.com/bytebeaver/leetcode-solutions/tree/master/1876-map-of-highest-peak) |
 | [2145-grid-game](https://github.com/bytebeaver/leetcode-solutions/tree/master/2145-grid-game) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
+| [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2850-minimum-moves-to-spread-stones-over-grid) |
 | [3227-find-missing-and-repeated-values](https://github.com/bytebeaver/leetcode-solutions/tree/master/3227-find-missing-and-repeated-values) |
 ## Linked List
 |  |
@@ -372,6 +375,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2107-find-unique-binary-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/2107-find-unique-binary-string) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/2456-construct-smallest-number-from-di-string) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/bytebeaver/leetcode-solutions/tree/master/2802-find-the-punishment-number-of-an-integer) |
+| [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2850-minimum-moves-to-spread-stones-over-grid) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
 ## Tree
 |  |
@@ -425,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1406-stone-game-iii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1406-stone-game-iii) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/bytebeaver/leetcode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2850-minimum-moves-to-spread-stones-over-grid) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/bytebeaver/leetcode-solutions/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 ## Number Theory
 |  |
@@ -498,4 +503,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3345-smallest-divisible-digit-product-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/3345-smallest-divisible-digit-product-i) |
+## Bitmask
+|  |
+| ------- |
+| [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2850-minimum-moves-to-spread-stones-over-grid) |
 <!---LeetCode Topics End-->
