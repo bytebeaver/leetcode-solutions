@@ -29,38 +29,52 @@
 //     }
 // };
 
-
 class Solution {
 public:
 
-    bool possibleHai(long long given_time, vector<int> time, int totalTrips )
+    // Checks: agar 'given_time' tak har bus apna kaam kare,
+    // to kya total trips >= totalTrips ho jaayenge?
+    bool possibleHai(long long given_time, vector<int> time, int totalTrips)
     {
         long long actual_trips = 0;
 
+        // Har bus ke trips ko sum karo: given_time / time[i]
+        // (integer division => poore trips hi count honge, adhoore nahi)
         for(int &t : time)
         {
-            actual_trips += given_time/t;
+            actual_trips += given_time / t;
         }
 
+        // int totalTrips implicitly long long mein promote ho jaayega
+        // is comparison ke liye — safe, koi data loss nahi
         return actual_trips >= totalTrips;
     }
+
     long long minimumTime(vector<int>& time, int totalTrips) {
         
+        // Left bound: sabse chhota possible time
         long long l = 1;
 
-        long long r = (long long) *min_element( begin(time) , end(time)) * totalTrips;
+        // Right bound: agar sirf fastest bus akela kaam kare,
+        // to itne time mein totalTrips guaranteed complete ho jaayenge
+        long long r = (long long) *min_element(begin(time), end(time)) * totalTrips;
 
-        while(l<r)
+        while(l < r)
         {
-            long long mid_time = l + (r-l)/2;
+            // Overflow-safe midpoint calculation
+            long long mid_time = l + (r - l) / 2;
 
-            if( possibleHai(mid_time,time, totalTrips ) )
-            r = mid_time;
+            if(possibleHai(mid_time, time, totalTrips))
+                // mid khud valid answer ho sakta hai -> retain karo,
+                // ab chhote answers dhoondo
+                r = mid_time;
 
             else
-            l = mid_time + 1;
+                // mid kabhi answer nahi ban sakta -> completely discard karo
+                l = mid_time + 1;
         }
 
+        // l == r yahan -> yehi minimum valid time hai
         return l;
     }
 };
