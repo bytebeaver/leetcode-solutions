@@ -39,26 +39,29 @@ class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
         
-        int m = matrix.size(); //number of rows
-        int n = matrix[0].size(); // number of columns
+        int m = matrix.size(); // total rows
+        int n = matrix[0].size(); // total columns (assuming non-empty matrix)
 
-       int low = 0;
-       int high = m*n -1;
+        // Treat the whole matrix as a single sorted 1D array of size m*n
+        int low = 0;
+        int high = m*n - 1;
 
-       while(low<=high)
-       {
-        int mid = low + (high-low)/2;
+        while(low <= high) // standard binary search invariant: search space non-empty
+        {
+            int mid = low + (high-low)/2; // overflow-safe mid
 
-        if(target > matrix[mid/n][mid%n])
-        low = mid+1;
+            // Map the 1D virtual index 'mid' back to 2D coordinates:
+            // mid/n gives row number, mid%n gives column number
+            if(target > matrix[mid/n][mid%n])
+                low = mid+1;   // target lies in the right half, discard left half
 
-        else if(target < matrix[mid/n][mid%n])
-        high = mid-1;
+            else if(target < matrix[mid/n][mid%n])
+                high = mid-1;  // target lies in the left half, discard right half
 
-        else if(target == matrix[mid/n][mid%n])
-        return true;
-       }
+            else if(target == matrix[mid/n][mid%n])
+                return true;   // found target
+        }
 
-    return false;
+        return false; // search space exhausted, target not present
     }
 };
