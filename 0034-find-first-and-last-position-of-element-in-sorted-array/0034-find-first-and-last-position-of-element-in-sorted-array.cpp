@@ -3,26 +3,30 @@ public:
 
    int FindingFirst(vector<int> &nums, int l, int r , int target)
    {
-        int first = -1;
+        int first = -1; // default: target nahi mila
+
         while(l<=r)
         {
-            int mid = l+ (r-l)/2;
+            int mid = l + (r-l)/2; // overflow-safe mid calculation
 
             if(nums[mid] == target)
             {
-                //go left
+                // candidate mila, par leftmost chahiye
+                // isliye store karke left half mein aur dhundho
                 first = mid;
-                r = mid-1;
+                r = mid-1; // go left
             }
 
             else if(nums[mid] > target)
             {
+                // target bayi taraf hai
                 r = mid-1;
             }
 
             else if(nums[mid] < target)
             {
-                l=mid+1;
+                // target dayi taraf hai
+                l = mid+1;
             }
         }
 
@@ -31,25 +35,29 @@ public:
 
    int FindingLast(vector<int> &nums, int l, int r , int target)
    {
-        int Last = -1;
+        int Last = -1; // default: target nahi mila
+
         while(l<=r)
         {
-            int mid = l+ (r-l)/2;
+            int mid = l + (r-l)/2;
 
             if(nums[mid] == target)
             {
-                //go right
+                // candidate mila, par rightmost chahiye
+                // isliye store karke right half mein aur dhundho
                 Last = mid;
-                l = mid+1;
+                l = mid+1; // go right
             }
             else if(nums[mid] < target)
             {
-                l=mid+1;
+                // target dayi taraf hai
+                l = mid+1;
             }
 
             else if(nums[mid] > target)
             {
-                r= mid-1;
+                // target bayi taraf hai
+                r = mid-1;
             }
         }
 
@@ -61,19 +69,17 @@ public:
         
         int n = nums.size();
 
-
-        int l=0;
+        int l = 0;
         int r = n-1;
 
-        int first = FindingFirst(nums, l , r, target);
-        int last = FindingLast(nums, l,r, target);
+        // dono independent binary searches — koi shared state nahi
+        int first = FindingFirst(nums, l, r, target);
+        int last = FindingLast(nums, l, r, target);
 
         vector<int> result;
-
         result.push_back(first);
         result.push_back(last);
 
         return result;
-
     }
 };
