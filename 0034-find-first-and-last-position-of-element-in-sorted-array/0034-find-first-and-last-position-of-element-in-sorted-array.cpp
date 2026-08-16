@@ -15,7 +15,7 @@ public:
                 r = mid-1;
             }
 
-            if(nums[mid] > target)
+            else if(nums[mid] > target)
             {
                 r = mid-1;
             }
@@ -42,7 +42,7 @@ public:
                 Last = mid;
                 l = mid+1;
             }
-            if(nums[mid] < target)
+            else if(nums[mid] < target)
             {
                 l=mid+1;
             }
