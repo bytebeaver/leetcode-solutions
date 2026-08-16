@@ -21,10 +21,7 @@ public:
 
             if(nums[mid]!= nums[mid+1] && nums[mid]!= nums[mid-1])
             return nums[mid];
-            
-            if(l==mid)
-            return nums[r];
-            
+          
             if(nums[mid]== nums[mid-1])
              {
                 //pair ke ilawa left side pr kitne elements bache
