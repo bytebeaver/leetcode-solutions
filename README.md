@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
 | [0540-single-element-in-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0540-single-element-in-a-sorted-array) |
+| [0560-subarray-sum-equals-k](https://github.com/bytebeaver/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/bytebeaver/leetcode-solutions/tree/master/0724-find-pivot-index) |
 | [0735-asteroid-collision](https://github.com/bytebeaver/leetcode-solutions/tree/master/0735-asteroid-collision) |
 | [0852-peak-index-in-a-mountain-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0852-peak-index-in-a-mountain-array) |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0410-split-array-largest-sum) |
+| [0560-subarray-sum-equals-k](https://github.com/bytebeaver/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/bytebeaver/leetcode-solutions/tree/master/0724-find-pivot-index) |
 | [1140-stone-game-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1140-stone-game-ii) |
 | [1477-product-of-the-last-k-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/1477-product-of-the-last-k-numbers) |
@@ -132,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0142-linked-list-cycle-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/bytebeaver/leetcode-solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0496-next-greater-element-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/0496-next-greater-element-i) |
+| [0560-subarray-sum-equals-k](https://github.com/bytebeaver/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0952-word-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0952-word-subsets) |
 | [1160-letter-tile-possibilities](https://github.com/bytebeaver/leetcode-solutions/tree/master/1160-letter-tile-possibilities) |
