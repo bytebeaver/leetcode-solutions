@@ -25,27 +25,41 @@
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
-       
-       int sum = 0;
-       int count = 0;
 
-       map<int, int> freq;
-        freq[0] = 1;
+        int prefixSum = 0;       // Sum of elements from the start up to current index
+        int subarrayCount = 0;   // Number of subarrays whose sum equals k
 
-       for(int i=0; i< nums.size(); i++)
-       {
-          sum += nums[i];
+        // Stores how many times each prefix sum has occurred.
+        // prefixSum -> frequency
+        map<int, int> prefixSumFrequency;
 
-          int partial = sum -k;
+        // A prefix sum of 0 exists before we process any element.
+        // This handles subarrays that start from index 0.
+        prefixSumFrequency[0] = 1;
 
-          if( freq[partial])
-          count += freq[partial];
+        for (int i = 0; i < nums.size(); i++) {
 
-          freq[sum]++;
+            // Update the prefix sum by including the current element.
+            prefixSum += nums[i];
 
-       }
+            // We need an earlier prefix sum such that:
+            //
+            // current prefixSum - previous prefixSum = k
+            //
+            // Therefore:
+            // previous prefixSum = current prefixSum - k
+            int requiredPrefixSum = prefixSum - k;
 
-       return count;
-       
+            // If this prefix sum has occurred before, each occurrence
+            // represents one subarray ending at the current index with sum k.
+            if (prefixSumFrequency[requiredPrefixSum]) {
+                subarrayCount += prefixSumFrequency[requiredPrefixSum];
+            }
+
+            // Record the current prefix sum for future subarrays.
+            prefixSumFrequency[prefixSum]++;
+        }
+
+        return subarrayCount;
     }
 };
