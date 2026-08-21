@@ -4,11 +4,15 @@ public:
 
         int arraySize = nums.size();
 
-        // remainder -> how many times this remainder has appeared
+        // remainderFrequency[r] = number of prefix sums seen so far
+        // whose remainder when divided by k is r.
+        // We store frequencies because multiple previous prefix sums
+        // with the same remainder each create a valid subarray.
         map<int, int> remainderFrequency;
 
-        // Before processing any element, prefix sum = 0
-        // So remainder 0 has appeared once.
+        // Prefix sum before the array starts is 0, so remainder 0
+        // has already appeared once. This lets us count subarrays
+        // that start from index 0.
         remainderFrequency[0] = 1;
 
         int prefixSum = 0;
@@ -16,22 +20,27 @@ public:
 
         for (int index = 0; index < arraySize; index++) {
 
+            // Sum of nums[0...index].
             prefixSum += nums[index];
 
-            // C++ can give a negative remainder for a negative prefixSum.
+            // We only care about the prefix-sum remainder.
+            // Equal remainders imply a difference divisible by k.
             int remainder = prefixSum % k;
 
+            // C++ can produce negative remainders for negative prefix sums.
+            // Normalize into the range [0, k-1].
             if (remainder < 0) {
                 remainder += k;
             }
 
-            // If this remainder appeared before,
-            // each previous occurrence forms a valid subarray.
+            // Every previous prefix sum with this same remainder
+            // creates one valid subarray ending at the current index.
             if (remainderFrequency.find(remainder) != remainderFrequency.end()) {
                 subarrayCount += remainderFrequency[remainder];
             }
 
-            // Record this remainder for future subarrays.
+            // Make the current prefix remainder available for
+            // future subarrays.
             remainderFrequency[remainder]++;
         }
 
