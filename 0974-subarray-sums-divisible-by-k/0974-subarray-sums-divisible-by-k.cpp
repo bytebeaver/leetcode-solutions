@@ -14,14 +14,19 @@ public:
         {
             sum += nums[i];
 
-            int check = (sum%k + k)%k;
+            // int remainder= (sum%k + k)%k;   OR do it like:
+            
+            int remainder = sum % k;
 
-            if(freq.find(check) != freq.end())
+            if(remainder < 0)
+            remainder +=k;
+
+            if(freq.find(remainder) != freq.end())
             {
-                count+= freq[check];
+                count+= freq[remainder];
             }
 
-            freq[check]++;
+            freq[remainder]++;
         }
 
         return count;
