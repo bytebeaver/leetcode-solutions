@@ -1,27 +1,61 @@
+// class Solution {
+// public:
+//     int pivotIndex(vector<int>& nums) {
+        
+//         int n = nums.size();
+
+//         vector<int> prefix_sum(n,0);
+//         vector<int> suffix_sum(n,0);
+
+//         for(int i=1; i<n; i++)
+//         {
+//             prefix_sum[i] = prefix_sum[i-1] + nums[i-1];
+//         }
+
+//         suffix_sum[n-1] = 0;
+        
+//         for(int i=n-2; i>=0; i--)
+//         {
+//             suffix_sum[i] = suffix_sum[i+1] + nums[i+1];
+//         }
+
+//         for(int i = 0; i<n ; i++)
+//         {
+//             if(prefix_sum[i] == suffix_sum[i])
+//             return i;
+//         }
+
+//         return -1;
+//     }
+// };
+
+
 class Solution {
 public:
     int pivotIndex(vector<int>& nums) {
         
         int n = nums.size();
 
-        vector<int> prefix_sum(n,0);
-        vector<int> suffix_sum(n,0);
 
-        for(int i=1; i<n; i++)
+        int sum = 0;
+
+        for(int i=0; i<n; i++)
         {
-            prefix_sum[i] = prefix_sum[i-1] + nums[i-1];
+            sum+=nums[i];
         }
 
-        suffix_sum[n-1] = 0;
-        
-        for(int i=n-2; i>=0; i--)
-        {
-            suffix_sum[i] = suffix_sum[i+1] + nums[i+1];
-        }
+        int left =0;
 
-        for(int i = 0; i<n ; i++)
+        for(int i=0; i<n; i++)
         {
-            if(prefix_sum[i] == suffix_sum[i])
+            if(i!=0)
+            {
+            left += nums[i-1];
+            }
+            
+            int right = sum - (left + nums[i]);
+
+            if(left == right)
             return i;
         }
 
