@@ -89,24 +89,44 @@
 class Solution {
 public:
 
-    int isIdealPermutation(vector<int> nums)
+    bool isIdealPermutation(vector<int> nums)
     {
         int n = nums.size();
 
-        if(n<=2) return true;
+        // With at most 2 elements, every possible inversion is
+        // automatically a local inversion.
+        if(n <= 2) return true;
 
-        
+        // For index i, we need to know the minimum element
+        // among indices i+2, i+3, ..., n-1.
+        //
+        // Initially i = n-3, so the only possible non-local
+        // element is nums[n-1].
         int min_right = nums[n-1];
 
-        for(int i=n-3; i>=0; i--)
+        // We go from right to left so that min_right can be
+        // maintained incrementally instead of scanning the
+        // entire suffix for every i.
+        for(int i = n-3; i >= 0; i--)
         {
+            // If nums[i] is greater than the minimum element
+            // at index i+2 or beyond, then there exists a
+            // non-local global inversion.
+            //
+            // Such an inversion cannot be a local inversion,
+            // so local inversions != global inversions.
             if(nums[i] > min_right)
-            return false;
+                return false;
 
+            // For the next iteration (i-1), the required suffix
+            // starts from index i+1.
+            //
+            // Therefore add nums[i+1] into our running minimum.
             min_right = min(min_right, nums[i+1]);
         }
 
-    return true;
-        
+        // No non-local inversion was found.
+        // Therefore every global inversion is local.
+        return true;
     }
-    };
+};
