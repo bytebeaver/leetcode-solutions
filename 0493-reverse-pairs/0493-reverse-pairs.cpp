@@ -1,106 +1,54 @@
-
 class Solution {
 public:
-
-    // Stores the total number of inversions found during all merges.
-    // long long is safer because the number of inversions can be n(n-1)/2.
+    // Stores total inversions; long long because count can exceed INT_MAX for n=5*10^4.
     long long count = 0;
 
     void merge(vector<int>& arr, int l, int mid, int r)
     {
         vector<int> temp;
+        int left = l;      // pointer for merging (left half)
+        int right = mid + 1; // pointer for merging (right half)
 
-        // Points to the current element in the sorted left half.
-        int left = l;
-
-        // Points to the current element in the sorted right half.
-        int right = mid + 1;
-
-        //counting the reverse pairs:
-
-        int j = mid+1;
-
-        for(int i = l ; i<= mid; i++)
+        // ---- COUNTING PHASE ----
+        // j never resets across i iterations — this is what makes it O(n) not O(n^2).
+        int j = mid + 1;
+        for (int i = l; i <= mid; i++)
         {
-           while(j <=r && arr[i] > 2LL*arr[j])
-           {
-            j++;
-           }
-
-           count += j-(mid+1); //here mid+1 denotes the starting index of the right array (mid+1...r)
+            // Both halves sorted => threshold moves monotonically forward => j only advances.
+            while (j <= r && arr[i] > 2LL * arr[j]) // 2LL avoids overflow
+            {
+                j++;
+            }
+            // [mid+1, j-1] are all valid reverse-pair partners for arr[i].
+            count += j - (mid + 1);
         }
 
-        // Both halves are already sorted.
-        // This sorted property lets us count multiple inversions at once.
+        // ---- STANDARD MERGE PHASE ----
         while (left <= mid && right <= r)
         {
-
-          
-            if (arr[left] <= arr[right])
-            {
-                temp.push_back(arr[left]);
-                left++;
-            }
-        
-            else
-            {
-                temp.push_back(arr[right]);
-                right++;
-            }
+            if (arr[left] <= arr[right]) { temp.push_back(arr[left]); left++; }
+            else { temp.push_back(arr[right]); right++; }
         }
+        while (left <= mid) { temp.push_back(arr[left]); left++; }
+        while (right <= r) { temp.push_back(arr[right]); right++; }
 
-        // Remaining left elements are already sorted.
-        while (left <= mid)
-        {
-            temp.push_back(arr[left]);
-            left++;
-        }
-
-        // Remaining right elements are already sorted.
-        while (right <= r)
-        {
-            temp.push_back(arr[right]);
-            right++;
-        }
-
-        // Copy the merged sorted range back into arr.
-        for (int i = l; i <= r; i++)
-        {
-            arr[i] = temp[i - l];
-        }
+        for (int i = l; i <= r; i++) arr[i] = temp[i - l];
     }
 
     void mergeSort(vector<int>& arr, int l, int r)
     {
-        // 0 or 1 element means no possible inversion.
-        if (l >= r)
-            return;
-
-        // Split the array into two halves.
+        if (l >= r) return; // 0/1 element, no pair possible
         int mid = l + (r - l) / 2;
-
-        // Sort the left half.
         mergeSort(arr, l, mid);
-
-        // Sort the right half.
         mergeSort(arr, mid + 1, r);
-
-        // Merge the two sorted halves and count cross-half inversions.
-        merge(arr, l, mid, r);
+        merge(arr, l, mid, r); // count cross-half pairs + merge
     }
 
     int reversePairs(vector<int> &arr)
     {
-        // Reset in case the same Solution object is reused.
-        count = 0;
-
+        count = 0; // reset for reuse
         int n = arr.size();
-
-        // Sort the array while counting inversions.
         mergeSort(arr, 0, n - 1);
-
         return count;
     }
 };
-
-
