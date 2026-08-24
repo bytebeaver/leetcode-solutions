@@ -1,29 +1,40 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
-        
-            int size=numbers.size();
 
-            int i=0;
-            int j=size-1;
-            vector<int>result;
+        // Since the array is sorted, we can use two pointers.
+        int left = 0;
+        int right = numbers.size() - 1;
 
-            while(i<=j)
+        while(left < right)
+        {
+            int sum = numbers[left] + numbers[right];
+
+            // We found the required pair.
+            if(sum == target)
             {
-                if(numbers[i]+numbers[j]==target)
-                {
-                    result.push_back(i+1);
-                    result.push_back(j+1);
-                    return result;
-                }
-
-                else if(numbers[i]+numbers[j]<target)
-                i++;
-
-                else if(numbers[i]+numbers[j]>target)
-                j--;
+                // LeetCode Two Sum II uses 1-based indexing.
+                return {left + 1, right + 1};
             }
 
-        return result;
+            // Current sum is too small.
+            // Because the array is sorted, moving left forward
+            // gives us a larger number and therefore increases the sum.
+            else if(sum < target)
+            {
+                left++;
+            }
+
+            // Current sum is too large.
+            // Moving right backward gives us a smaller number
+            // and therefore decreases the sum.
+            else
+            {
+                right--;
+            }
+        }
+
+        // The problem guarantees that exactly one solution exists.
+        return {};
     }
 };
