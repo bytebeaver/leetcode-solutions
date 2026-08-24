@@ -1,61 +1,80 @@
 class Solution {
 public:
     int threeSumClosest(vector<int>& nums, int target) {
-        
+
         int n = nums.size();
+
+        // Sort the array so that we can use two pointers.
         sort(nums.begin(), nums.end());
 
-        
-        int candidate = INT_MAX;
+        // Stores the smallest difference from target
+        // found so far.
+        int mindiff = INT_MAX;
+
+        // Stores the triplet sum corresponding
+        // to mindiff.
         int ans;
-        for(int i=0; i<=n-2; i++)
+
+        // Fix the first element of the triplet.
+        for(int i = 0; i <= n - 2; i++)
         {
+            // Skip duplicate first elements.
+            if(i > 0 && nums[i] == nums[i - 1])
+                continue;
 
-            if(i> 0 && nums[i] == nums[i-1])
-            continue;
+            // Left pointer starts immediately after i.
+            int l = i + 1;
 
-            int l = i+1;
-            int r = n-1;
+            // Right pointer starts at the last element.
+            int r = n - 1;
 
-            while(l<r)
+            // Need two different elements after i.
+            while(l < r)
             {
+                // Current triplet sum.
                 int sum = nums[i] + nums[l] + nums[r];
 
+                // Exact match is the best possible answer.
                 if(sum == target)
                 {
-                    ans = target;
-                    return ans;
+                    return target;
                 }
 
-                else
+                // Calculate how far the current sum
+                // is from the target.
+                int diff = abs(target - sum);
+
+                // If this sum is closer to target than
+                // anything found previously, update answer.
+                if(diff < mindiff)
                 {
-                    int diff = abs(target - sum);
+                    mindiff = diff;
+                    ans = sum;
+                }
 
-                    if(diff < candidate)
-                    {
-                        candidate = diff;
-                        ans = sum;
-                    }
-
-                    if(sum < target)
-                    {
+                // Current sum is smaller than target.
+                // We need to increase the sum.
+                if(sum < target)
+                {
                     l++;
-                        if(l<r && nums[l] == nums[l-1])
-                        l++;
-                    }
-                    
 
-                    else if(sum > target)
-                    {
+                    // Skip duplicate values.
+                    if(l < r && nums[l] == nums[l - 1])
+                        l++;
+                }
+
+                // Current sum is larger than target.
+                // We need to decrease the sum.
+                else if(sum > target)
+                {
                     r--;
-                        if(l<r && nums[r] == nums[r+1])
+
+                    // Skip duplicate values.
+                    if(l < r && nums[r] == nums[r + 1])
                         r--;
-                    }
-                   
                 }
             }
         }
-
 
         return ans;
     }
