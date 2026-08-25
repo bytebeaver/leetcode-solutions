@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3429-special-array-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/bytebeaver/leetcode-solutions/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
+| [3639-minimum-time-to-activate-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/3639-minimum-time-to-activate-string) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/bytebeaver/leetcode-solutions/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 | [3731-find-missing-elements](https://github.com/bytebeaver/leetcode-solutions/tree/master/3731-find-missing-elements) |
 ## String
@@ -521,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2665-minimum-time-to-repair-cars](https://github.com/bytebeaver/leetcode-solutions/tree/master/2665-minimum-time-to-repair-cars) |
 | [2690-house-robber-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2690-house-robber-iv) |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/bytebeaver/leetcode-solutions/tree/master/2824-count-pairs-whose-sum-is-less-than-target) |
+| [3639-minimum-time-to-activate-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/3639-minimum-time-to-activate-string) |
 ## Shortest Path
 |  |
 | ------- |
