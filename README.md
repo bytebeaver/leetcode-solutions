@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0952-word-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0952-word-subsets) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/bytebeaver/leetcode-solutions/tree/master/0974-subarray-sums-divisible-by-k) |
 | [0977-squares-of-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0977-squares-of-a-sorted-array) |
+| [1019-next-greater-node-in-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [1140-stone-game-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1140-stone-game-ii) |
 | [1186-maximum-subarray-sum-with-one-deletion](https://github.com/bytebeaver/leetcode-solutions/tree/master/1186-maximum-subarray-sum-with-one-deletion) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/bytebeaver/leetcode-solutions/tree/master/1335-maximum-candies-allocated-to-k-children) |
@@ -261,6 +262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0735-asteroid-collision](https://github.com/bytebeaver/leetcode-solutions/tree/master/0735-asteroid-collision) |
 | [0907-sum-of-subarray-minimums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [0946-validate-stack-sequences](https://github.com/bytebeaver/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
+| [1019-next-greater-node-in-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/bytebeaver/leetcode-solutions/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2104-sum-of-subarray-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2104-sum-of-subarray-ranges) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
@@ -314,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0234-palindrome-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0328-odd-even-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0908-middle-of-the-linked-list) |
+| [1019-next-greater-node-in-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/1019-next-greater-node-in-linked-list) |
 ## Recursion
 |  |
 | ------- |
@@ -599,6 +602,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
 | [0907-sum-of-subarray-minimums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0907-sum-of-subarray-minimums) |
+| [1019-next-greater-node-in-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [2104-sum-of-subarray-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2104-sum-of-subarray-ranges) |
 ## Binary Indexed Tree
 |  |
