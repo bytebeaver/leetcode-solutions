@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0877-stone-game](https://github.com/bytebeaver/leetcode-solutions/tree/master/0877-stone-game) |
 | [0907-sum-of-subarray-minimums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+| [0946-validate-stack-sequences](https://github.com/bytebeaver/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
 | [0952-word-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0952-word-subsets) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/bytebeaver/leetcode-solutions/tree/master/0974-subarray-sums-divisible-by-k) |
 | [0977-squares-of-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0977-squares-of-a-sorted-array) |
@@ -256,6 +257,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
 | [0735-asteroid-collision](https://github.com/bytebeaver/leetcode-solutions/tree/master/0735-asteroid-collision) |
 | [0907-sum-of-subarray-minimums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0907-sum-of-subarray-minimums) |
+| [0946-validate-stack-sequences](https://github.com/bytebeaver/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/bytebeaver/leetcode-solutions/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2104-sum-of-subarray-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2104-sum-of-subarray-ranges) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
@@ -377,6 +379,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0735-asteroid-collision](https://github.com/bytebeaver/leetcode-solutions/tree/master/0735-asteroid-collision) |
+| [0946-validate-stack-sequences](https://github.com/bytebeaver/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/bytebeaver/leetcode-solutions/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/bytebeaver/leetcode-solutions/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2390-removing-stars-from-a-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/2390-removing-stars-from-a-string) |
