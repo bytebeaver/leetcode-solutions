@@ -24,13 +24,23 @@ public:
 
         int stack_size = st.size();
 
-        string str(stack_size, ' ');
+        // string str(stack_size, ' ');
 
-        for(int i=stack_size-1; i>=0; i--)
+        // for(int i=stack_size-1; i>=0; i--)
+        // {
+        //     str[i]= st.top();
+        //     st.pop();
+        // }
+
+        string str = "";
+
+        while(!st.empty())
         {
-            str[i]= st.top();
+            str.push_back( st.top() );
             st.pop();
         }
+
+        reverse(begin(str), end(str));
 
     return str;
     }
