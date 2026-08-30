@@ -1,3 +1,6 @@
+
+//read leetcode 560 : it is a very simple case of that ..subarray sum equals k
+
 class Solution {
 public:
     int numSubarraysWithSum(vector<int>& nums, int goal) {
@@ -9,7 +12,7 @@ public:
         int sum = 0;
         
         mp[0] = 1;
-        
+
         int count = 0;
         for(int i=0; i<n ; i++)
         {
