@@ -1,45 +1,70 @@
 class Solution {
 public:
     int characterReplacement(string s, int k) {
-        
+
         int n = s.length();
 
+        // Stores frequency of each uppercase character
+        // char_freq[0] -> frequency of 'A'
+        // char_freq[1] -> frequency of 'B'
+        // ...
+        // char_freq[25] -> frequency of 'Z'
         vector<int> char_freq(26, 0);
 
+        // Maximum frequency of any single character
+        // inside the current window
         int max_freq = 0;
 
+        // Stores the maximum valid window length found
         int max_len = 0;
 
-        int l=0,r=0;
+        // Sliding window
+        int l = 0, r = 0;
 
-        while(r<n)
+        while (r < n)
         {
-            char_freq[ s[r] - 'A' ]++;
+            // Add s[r] to the current window
+            char_freq[s[r] - 'A']++;
 
-            max_freq = max( max_freq, char_freq[ s[r] - 'A']);
+            // Update maximum frequency
+            max_freq = max(max_freq,
+                           char_freq[s[r] - 'A']);
 
-            //check if segment is valid or not
-            
-            while( (r-l+1) - max_freq > k) //i.e number of  conversions required is more than k
+            // Check whether the current window is invalid
+            //
+            // Number of replacements required =
+            // window length - frequency of most frequent character
+            //
+            // If this is greater than k,
+            // we need to shrink the window.
+            while ((r - l + 1) - max_freq > k)
             {
-                //we have to increment l so we will decrement the freq of character at current l
-                char_freq[ s[l]- 'A' ]--;
+                // Remove the character at l
+                char_freq[s[l] - 'A']--;
 
-                //recalculate the max_freq
+                // Recalculate maximum frequency
+                // among all 26 characters
                 max_freq = 0;
 
-                for(int i=0; i<26; i++) 
-                max_freq = max(max_freq, char_freq[i]);
+                for (int i = 0; i < 26; i++)
+                {
+                    max_freq = max(max_freq,
+                                   char_freq[i]);
+                }
 
+                // Move left pointer forward
                 l++;
-
             }
 
-            if( (r-l+1) - max_freq <= k)
+            // Current window is valid,
+            // so update the maximum length.
+            if ((r - l + 1) - max_freq <= k)
             {
-                max_len = max(max_len, r-l+1);
+                max_len = max(max_len,
+                              r - l + 1);
             }
 
+            // Expand the window
             r++;
         }
 
