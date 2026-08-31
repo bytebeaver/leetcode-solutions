@@ -1,66 +1,101 @@
 class Solution {
 public:
 
-
-     bool canShip( vector<int> &weights, int capacity, int days)
-     {
-        //sum of all elements of the weights array divided by current capacity should be less than days 
-        // return total_weight/capacity <= days;
-
+    // Checks whether it is possible to ship all packages
+    // within 'days' days using the given ship capacity.
+    bool canShip(vector<int>& weights, int capacity, int days)
+    {
+        // We will use at least one day because there is
+        // at least one package.
         int days_required = 1;
+
         int n = weights.size();
 
+        // Stores the total weight loaded on the current day.
         int weight_for_the_day = 0;
 
-        int i=0;
-        while(i<n)
+        int i = 0;
+
+        while(i < n)
         {
+            // Try to put the current package on the
+            // current day.
             weight_for_the_day += weights[i];
-            
-            if(weight_for_the_day > capacity )
+
+            // If adding this package exceeds the ship's capacity,
+            // we cannot keep it on the current day.
+            if(weight_for_the_day > capacity)
             {
-                weight_for_the_day= weights[i];
-                days_required +=1;
-                
+                // Start a new day.
+                // The current package becomes the first
+                // package of the new day.
+                weight_for_the_day = weights[i];
+
+                // We have used one more day.
+                days_required++;
             }
 
             i++;
         }
+
+        // If the required number of days is within
+        // the allowed number of days, this capacity works.
         return days_required <= days;
-     }
+    }
 
 
     int shipWithinDays(vector<int>& weights, int days) {
-        
+
         int n = weights.size();
+
+        // Minimum possible capacity:
+        // The ship must be able to carry the heaviest package.
         int low = *max_element(begin(weights), end(weights));
-        
+
+        // Calculate the total weight of all packages.
         int total_weight = 0;
 
-        for(int i=0; i<n; i++)
+        for(int i = 0; i < n; i++)
         {
             total_weight += weights[i];
         }
 
+        // Maximum possible capacity:
+        // If the ship can carry everything in one day,
+        // its capacity needs to equal the total weight.
         int high = total_weight;
 
-        while( low <= high)
+        // Binary search for the first capacity
+        // that can ship everything within 'days' days.
+        while(low <= high)
         {
-            int mid = low + (high-low)/2;
+            // Avoids possible overflow compared to (low + high) / 2.
+            int mid = low + (high - low) / 2;
 
             int current_capacity = mid;
 
-            if( canShip(weights, current_capacity, days))
+            // Check whether this capacity is sufficient.
+            if(canShip(weights, current_capacity, days))
             {
-                high = mid-1;
+                // This capacity works.
+                // But we want the smallest working capacity,
+                // so search towards the left.
+                high = mid - 1;
             }
-
             else
             {
-                low = mid+1;
+                // This capacity does not work.
+                // We need a larger capacity.
+                low = mid + 1;
             }
         }
 
+        // At the end:
+        //
+        // high = last invalid capacity
+        // low  = first valid capacity
+        //
+        // Therefore, low is the answer.
         return low;
     }
 };
