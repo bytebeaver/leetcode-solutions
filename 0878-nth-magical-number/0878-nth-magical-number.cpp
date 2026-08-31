@@ -1,37 +1,61 @@
 class Solution {
 public:
+
     int nthMagicalNumber(int n, int a, int b) {
-        
-        long A = a ;
+
+        long A = a;
         long B = b;
 
-        long mod = (long)(pow(10,9)+7);
-        //get LCM
+        long mod = (long)(pow(10, 9) + 7);
 
-        //first get GCD
-        while( B >0)
+
+        // Find GCD using Euclidean Algorithm
+        while (B > 0)
         {
             long temp = A;
-             A=B ; 
-             B = temp % B;
+            A = B;
+            B = temp % B;
         }
 
-        long lcm = ( (long)a*b)/A;
+        // A now contains GCD(a, b)
 
-        long low = min(a,b);
+        // LCM = (a * b) / GCD
+        long lcm = ((long)a * b) / A;
 
-        long high = (long)n * min(a,b);
-        while( low<high) //loop will break when l == h
+
+        // Smallest possible magical number
+        long low = min(a, b);
+
+        // nth multiple of min(a,b) is always magical
+        // so this is an upper bound
+        long high = (long)n * min(a, b);
+
+
+        // Binary search for the nth magical number
+        while (low < high)
         {
-            long m = low + (high - low)/2;
+            long m = low + (high - low) / 2;
 
-            if ( m/a + m/b - (m/lcm) < n )
-            low = m+1;
+            // Count magical numbers <= m
+            // Subtract multiples of LCM to avoid
+            // counting numbers divisible by both twice.
+            long count = m / a + m / b - m / lcm;
 
-            else if(m/a + m/b - (m/lcm) >=n)
-            high = m;
+            if (count < n)
+            {
+                // Not enough magical numbers
+                // Answer must be larger.
+                low = m + 1;
+            }
+            else
+            {
+                // At least n magical numbers exist.
+                // m could be the answer, so search left.
+                high = m;
+            }
         }
 
+        // low == high == nth magical number
         return (int)(low % mod);
     }
 };
