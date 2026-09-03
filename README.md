@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/bytebeaver/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0078-subsets) |
 | [0084-largest-rectangle-in-histogram](https://github.com/bytebeaver/leetcode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/bytebeaver/leetcode-solutions/tree/master/0085-maximal-rectangle) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0152-maximum-product-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/0152-maximum-product-subarray) |
@@ -284,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0042-trapping-rain-water](https://github.com/bytebeaver/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/bytebeaver/leetcode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/bytebeaver/leetcode-solutions/tree/master/0085-maximal-rectangle) |
 | [0094-binary-tree-inorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0144-binary-tree-preorder-traversal) |
 | [0234-palindrome-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0234-palindrome-linked-list) |
@@ -325,6 +327,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0074-search-a-2d-matrix](https://github.com/bytebeaver/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
+| [0085-maximal-rectangle](https://github.com/bytebeaver/leetcode-solutions/tree/master/0085-maximal-rectangle) |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
 | [0854-making-a-large-island](https://github.com/bytebeaver/leetcode-solutions/tree/master/0854-making-a-large-island) |
 | [1396-count-servers-that-communicate](https://github.com/bytebeaver/leetcode-solutions/tree/master/1396-count-servers-that-communicate) |
@@ -519,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/bytebeaver/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/0053-maximum-subarray) |
 | [0070-climbing-stairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0070-climbing-stairs) |
+| [0085-maximal-rectangle](https://github.com/bytebeaver/leetcode-solutions/tree/master/0085-maximal-rectangle) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0152-maximum-product-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/bytebeaver/leetcode-solutions/tree/master/0198-house-robber) |
@@ -650,6 +654,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0042-trapping-rain-water](https://github.com/bytebeaver/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/bytebeaver/leetcode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/bytebeaver/leetcode-solutions/tree/master/0085-maximal-rectangle) |
 | [0402-remove-k-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
