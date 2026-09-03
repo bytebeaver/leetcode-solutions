@@ -1,76 +1,144 @@
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
+// /**
+//  * Definition for singly-linked list.
+//  * struct ListNode {
+//  *     int val;
+//  *     ListNode *next;
+//  *     ListNode() : val(0), next(nullptr) {}
+//  *     ListNode(int x) : val(x), next(nullptr) {}
+//  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+//  * };
+//  */
+
+// class Solution {
+// public:
+//     vector<int> nextLargerNodes(ListNode* head) {
+        
+//         ListNode *temp = head;
+
+//         // Step 1: Find the number of nodes in the linked list
+//         int size = 0;
+
+//         while(temp != NULL)
+//         {
+//             size++;
+//             temp = temp->next;
+//         }
+
+//         // Step 2: Store all linked list values in an array
+//         // This allows us to access elements from right to left
+//         vector<int> values(size);
+
+//         temp = head;
+
+//         int i = 0;
+
+//         while(temp != NULL && i < size)
+//         {
+//             values[i] = temp->val;
+//             temp = temp->next;
+//             i++;
+//         }
+
+//         // Stack will store possible next greater elements
+//         // We process the array from right to left
+//         stack<int> st;
+
+//         // nge[i] will contain the next greater element for values[i]
+//         vector<int> nge(size);
+
+//         // Step 3: Find Next Greater Element for every element
+//         // Start from the last element and move towards the first
+//         for(int i = size - 1; i >= 0; i--)
+//         {
+//             // Remove all elements that are smaller than or equal to
+//             // the current element because they cannot be its next greater element
+//             while(!st.empty() && st.top() <= values[i])
+//                 st.pop();
+
+//             // If stack is empty, there is no greater element to the right
+//             if(st.empty())
+//                 nge[i] = 0;
+
+//             // Otherwise, the top of the stack is the nearest greater element
+//             else
+//                 nge[i] = st.top();
+
+//             // Add the current element to the stack
+//             // It may be the next greater element for some element on its left
+//             st.push(values[i]);
+//         }
+
+//         // Return the next greater element for every node
+//         return nge;
+//     }
+// };
+
+
+//APPROACH 2 ---- rerversing the liked list
 
 class Solution {
 public:
     vector<int> nextLargerNodes(ListNode* head) {
-        
-        ListNode *temp = head;
 
-        // Step 1: Find the number of nodes in the linked list
-        int size = 0;
+        // Step 1: Reverse the linked list
+        ListNode* prev = NULL;
+        ListNode* curr = head;
 
-        while(temp != NULL)
+        while(curr != NULL)
         {
-            size++;
-            temp = temp->next;
+          ListNode * nextnode = curr->next;
+          curr->next = prev;
+          prev = curr;
+          curr = nextnode;
         }
 
-        // Step 2: Store all linked list values in an array
-        // This allows us to access elements from right to left
-        vector<int> values(size);
+        // 'prev' is now the head of the reversed list
+        head = prev;
 
-        temp = head;
 
-        int i = 0;
-
-        while(temp != NULL && i < size)
-        {
-            values[i] = temp->val;
-            temp = temp->next;
-            i++;
-        }
-
-        // Stack will store possible next greater elements
-        // We process the array from right to left
+        // Stack stores possible greater elements
         stack<int> st;
 
-        // nge[i] will contain the next greater element for values[i]
-        vector<int> nge(size);
+        // Stores answers while processing reversed list
+        vector<int> answer;
 
-        // Step 3: Find Next Greater Element for every element
-        // Start from the last element and move towards the first
-        for(int i = size - 1; i >= 0; i--)
+
+        // Step 2: Traverse the reversed linked list
+        curr = head;
+
+        while(curr != NULL)
         {
-            // Remove all elements that are smaller than or equal to
-            // the current element because they cannot be its next greater element
-            while(!st.empty() && st.top() <= values[i])
+            // Remove all elements that are smaller than
+            // or equal to the current value
+            while(!st.empty() && st.top() <= curr->val)
+            {
                 st.pop();
+            }
 
-            // If stack is empty, there is no greater element to the right
+            // If stack is empty, there is no greater element
             if(st.empty())
-                nge[i] = 0;
-
-            // Otherwise, the top of the stack is the nearest greater element
+            {
+                answer.push_back(0);
+            }
             else
-                nge[i] = st.top();
+            {
+                // Stack top is the nearest greater element
+                answer.push_back(st.top());
+            }
 
-            // Add the current element to the stack
-            // It may be the next greater element for some element on its left
-            st.push(values[i]);
+            // Current value can be the next greater
+            // element for nodes processed later
+            st.push(curr->val);
+
+            curr = curr->next;
         }
 
-        // Return the next greater element for every node
-        return nge;
+
+        // Step 3: Since we processed the reversed list,
+        // answers are also in reverse order.
+        reverse(answer.begin(), answer.end());
+
+        return answer;
     }
 };
-
