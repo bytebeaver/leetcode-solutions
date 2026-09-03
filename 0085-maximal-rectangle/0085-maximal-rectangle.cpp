@@ -93,34 +93,77 @@ int largestRectangleArea(vector<int>& heights) {
     }
 
 
+int maximalRectangle(vector<vector<char>>& matrix) {
+    
+    // Number of rows in the matrix
+    int n = matrix.size();
 
-    int maximalRectangle(vector<vector<char>>& matrix) {
-        
-        int n = matrix.size();
-        int m = matrix[0].size();
+    // Number of columns in the matrix
+    int m = matrix[0].size();
 
-        int max_area = 0;
-        vector<vector<int>>prefix_sum(n , vector<int>(m,0));
+    // Stores the maximum rectangle area found so far
+    int max_area = 0;
 
-        for( int j=0 ; j<m ; j++)
+    // prefix_sum[i][j] = number of consecutive 1s
+    // ending at row i in column j
+    //
+    // Initially, all values are 0
+    vector<vector<int>> prefix_sum(n, vector<int>(m, 0));
+
+
+    // ---------------------------------------------------------
+    // STEP 1: Build the height of consecutive 1s for each cell
+    // ---------------------------------------------------------
+
+    // Traverse column by column
+    for (int j = 0; j < m; j++)
+    {
+        // Keeps track of consecutive 1s in the current column
+        int sum = 0;
+
+        // Traverse from top to bottom in the current column
+        for (int i = 0; i < n; i++)
         {
-            int sum = 0;
+            // Convert character ('0' or '1') into integer
+            // and add it to the current consecutive count
+            sum += matrix[i][j] - '0';
 
-            for(int i=0; i<n; i++)
-            {
-                sum += matrix[i][j] -'0';
+            // If the current cell is 0,
+            // consecutive 1s are broken.
+            // Therefore, reset the count to 0.
+            if (matrix[i][j] == '0')
+                sum = 0;
 
-                if( matrix[i][j] == '0') sum = 0;
-
-                prefix_sum[i][j] = sum;
-            }
+            // Store the height of consecutive 1s
+            // ending at (i, j)
+            prefix_sum[i][j] = sum;
         }
-
-        for( int i=0; i<n; i++)
-        {
-            max_area = max( max_area ,largestRectangleArea(prefix_sum[i]) );
-        }
-
-        return max_area;
     }
+
+
+    // ---------------------------------------------------------
+    // STEP 2: Treat every row as a histogram
+    // ---------------------------------------------------------
+
+    // Each row of prefix_sum represents a histogram.
+    //
+    // For every row, find the largest rectangle
+    // that can be formed using its heights.
+    for (int i = 0; i < n; i++)
+    {
+        // largestRectangleArea() finds the maximum
+        // rectangular area in this histogram.
+        //
+        // Take the maximum over all rows.
+        max_area = max(
+            max_area,
+            largestRectangleArea(prefix_sum[i])
+        );
+    }
+
+
+    // Return the largest rectangle of 1s
+    // found anywhere in the matrix.
+    return max_area;
+}
 };
