@@ -293,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
 | [0735-asteroid-collision](https://github.com/bytebeaver/leetcode-solutions/tree/master/0735-asteroid-collision) |
+| [0901-online-stock-span](https://github.com/bytebeaver/leetcode-solutions/tree/master/0901-online-stock-span) |
 | [0907-sum-of-subarray-minimums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [0946-validate-stack-sequences](https://github.com/bytebeaver/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
 | [1019-next-greater-node-in-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/1019-next-greater-node-in-linked-list) |
@@ -449,11 +450,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0901-online-stock-span](https://github.com/bytebeaver/leetcode-solutions/tree/master/0901-online-stock-span) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/bytebeaver/leetcode-solutions/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1477-product-of-the-last-k-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/1477-product-of-the-last-k-numbers) |
 ## Data Stream
 |  |
 | ------- |
+| [0901-online-stock-span](https://github.com/bytebeaver/leetcode-solutions/tree/master/0901-online-stock-span) |
 | [1477-product-of-the-last-k-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/1477-product-of-the-last-k-numbers) |
 ## Divide and Conquer
 |  |
@@ -658,6 +661,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0402-remove-k-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
+| [0901-online-stock-span](https://github.com/bytebeaver/leetcode-solutions/tree/master/0901-online-stock-span) |
 | [0907-sum-of-subarray-minimums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [1019-next-greater-node-in-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [2104-sum-of-subarray-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2104-sum-of-subarray-ranges) |
