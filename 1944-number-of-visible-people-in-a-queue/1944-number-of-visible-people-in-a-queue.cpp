@@ -1,35 +1,30 @@
 class Solution {
 public:
     vector<int> canSeePersonsCount(vector<int>& heights) {
-        
-        int i=0;
 
         int n = heights.size();
 
-        vector<int> ans(n,0);
+        vector<int> ans(n, 0);
         stack<int> st;
 
+        for (int i = 0; i < n; i++) {
 
-        while( i<n)
-        {
-            while( !st.empty() && heights[st.top()] < heights[i])
-            {
-                ans[ st.top() ]++;
+            // Current person can see all shorter people
+            // that are removed from the stack.
+            while (!st.empty() && heights[st.top()] < heights[i]) {
+                ans[st.top()]++;
                 st.pop();
             }
 
-            if( st.empty())
-            {
-                st.push(i);
-                i++;
+            // If someone taller is still in the stack,
+            // the current person can see that taller person.
+            if (!st.empty()) {
+                ans[st.top()]++;
             }
 
-            else if( heights[i] < heights[st.top()])
-            {
-                ans[ st.top() ]++;
-                st.push(i);
-                i++;
-            }
+            // Current person becomes a candidate for
+            // future people to see.
+            st.push(i);
         }
 
         return ans;
