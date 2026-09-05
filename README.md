@@ -172,6 +172,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0141-linked-list-cycle](https://github.com/bytebeaver/leetcode-solutions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0142-linked-list-cycle-ii) |
+| [0146-lru-cache](https://github.com/bytebeaver/leetcode-solutions/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/bytebeaver/leetcode-solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0424-longest-repeating-character-replacement](https://github.com/bytebeaver/leetcode-solutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0496-next-greater-element-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/0496-next-greater-element-i) |
@@ -345,6 +346,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/bytebeaver/leetcode-solutions/tree/master/0021-merge-two-sorted-lists) |
 | [0141-linked-list-cycle](https://github.com/bytebeaver/leetcode-solutions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0142-linked-list-cycle-ii) |
+| [0146-lru-cache](https://github.com/bytebeaver/leetcode-solutions/tree/master/0146-lru-cache) |
 | [0148-sort-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0148-sort-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/bytebeaver/leetcode-solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0206-reverse-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0206-reverse-linked-list) |
@@ -450,6 +452,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/bytebeaver/leetcode-solutions/tree/master/0146-lru-cache) |
 | [0901-online-stock-span](https://github.com/bytebeaver/leetcode-solutions/tree/master/0901-online-stock-span) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/bytebeaver/leetcode-solutions/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1477-product-of-the-last-k-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/1477-product-of-the-last-k-numbers) |
@@ -706,4 +709,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0878-nth-magical-number](https://github.com/bytebeaver/leetcode-solutions/tree/master/0878-nth-magical-number) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/bytebeaver/leetcode-solutions/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
