@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1876-map-of-highest-peak](https://github.com/bytebeaver/leetcode-solutions/tree/master/1876-map-of-highest-peak) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/bytebeaver/leetcode-solutions/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/1927-maximum-ascending-subarray-sum) |
+| [1944-number-of-visible-people-in-a-queue](https://github.com/bytebeaver/leetcode-solutions/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [2104-sum-of-subarray-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2104-sum-of-subarray-ranges) |
 | [2107-find-unique-binary-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/2107-find-unique-binary-string) |
 | [2145-grid-game](https://github.com/bytebeaver/leetcode-solutions/tree/master/2145-grid-game) |
@@ -298,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0907-sum-of-subarray-minimums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [0946-validate-stack-sequences](https://github.com/bytebeaver/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
 | [1019-next-greater-node-in-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/1019-next-greater-node-in-linked-list) |
+| [1944-number-of-visible-people-in-a-queue](https://github.com/bytebeaver/leetcode-solutions/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/bytebeaver/leetcode-solutions/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2104-sum-of-subarray-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2104-sum-of-subarray-ranges) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
@@ -667,6 +669,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0901-online-stock-span](https://github.com/bytebeaver/leetcode-solutions/tree/master/0901-online-stock-span) |
 | [0907-sum-of-subarray-minimums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [1019-next-greater-node-in-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/1019-next-greater-node-in-linked-list) |
+| [1944-number-of-visible-people-in-a-queue](https://github.com/bytebeaver/leetcode-solutions/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [2104-sum-of-subarray-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2104-sum-of-subarray-ranges) |
 ## Binary Indexed Tree
 |  |
