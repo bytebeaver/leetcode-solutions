@@ -1,29 +1,46 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        
+
         int n = prices.size();
-        int max_profit = 0; //agar hame loss hi ho rhaa hua har haal me to hm transaction krenge hi nahi to profit 0 hoga
 
-        int i=0; //ith pointer is keeping track of the minimum price before the jth selling day 
+        // If we cannot make any profitable transaction,
+        // the answer will remain 0.
+        int max_profit = 0;
 
-        for( int j=1; j<n ; j++ )
-        {
+        // i keeps track of the index having the
+        // minimum buying price seen so far.
+        int i = 0;
 
-            //updating max_profit 
-            if( prices[j] - prices[i] > max_profit)
-            {
-                max_profit = prices[j] - prices[i];
+        // j represents the current selling day.
+        // We start from day 1 because buying and selling
+        // must happen on different days.
+        for (int j = 1; j < n; j++) {
+
+            // Consider buying on day i and selling on day j.
+            // Calculate the profit obtained from this transaction.
+            int profit = prices[j] - prices[i];
+
+            // Update the maximum profit found so far.
+            if (profit > max_profit) {
+                max_profit = profit;
             }
 
-            //updating the pointer to day with minimum byuing price
-            //next iteration j will be j+1 and current j is a candidate for being the day with minimum byuing price
-            if( prices[j] < prices[i])
-            i=j;
-
+            // If today's price is smaller than the current
+            // minimum buying price, then today becomes the
+            // best candidate for future buying.
+            //
+            // j can be used as the buying day for future
+            // selling days because future iterations will have
+            // index greater than j.
+            if (prices[j] < prices[i]) {
+                i = j;
+            }
         }
 
+        // Return the maximum profit.
+        // If every possible transaction gives a loss,
+        // max_profit remains 0.
         return max_profit;
-
     }
 };
