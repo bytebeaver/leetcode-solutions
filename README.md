@@ -84,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2308-divide-array-into-equal-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/2308-divide-array-into-equal-pairs) |
 | [2358-number-of-ways-to-split-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/2358-number-of-ways-to-split-array) |
 | [2448-count-number-of-bad-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/2448-count-number-of-bad-pairs) |
+| [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/bytebeaver/leetcode-solutions/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2465-shifting-letters-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/2465-shifting-letters-ii) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
@@ -304,6 +305,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2104-sum-of-subarray-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2104-sum-of-subarray-ranges) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2390-removing-stars-from-a-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/2390-removing-stars-from-a-string) |
+| [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/2456-construct-smallest-number-from-di-string) |
 | [3447-clear-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/3447-clear-digits) |
 ## Breadth-First Search
@@ -325,6 +327,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0239-sliding-window-maximum) |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
+| [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 ## Matrix
@@ -445,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0148-sort-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0148-sort-list) |
 | [0977-squares-of-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0977-squares-of-a-sorted-array) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
+| [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/bytebeaver/leetcode-solutions/tree/master/2824-count-pairs-whose-sum-is-less-than-target) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/bytebeaver/leetcode-solutions/tree/master/2888-minimum-index-of-a-valid-split) |
@@ -594,6 +598,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1539-kth-missing-positive-number](https://github.com/bytebeaver/leetcode-solutions/tree/master/1539-kth-missing-positive-number) |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/1802-maximum-value-at-a-given-index-in-a-bounded-array) |
 | [2187-minimum-time-to-complete-trips](https://github.com/bytebeaver/leetcode-solutions/tree/master/2187-minimum-time-to-complete-trips) |
+| [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2665-minimum-time-to-repair-cars](https://github.com/bytebeaver/leetcode-solutions/tree/master/2665-minimum-time-to-repair-cars) |
 | [2690-house-robber-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2690-house-robber-iv) |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/bytebeaver/leetcode-solutions/tree/master/2824-count-pairs-whose-sum-is-less-than-target) |
@@ -671,6 +676,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1019-next-greater-node-in-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/bytebeaver/leetcode-solutions/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [2104-sum-of-subarray-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2104-sum-of-subarray-ranges) |
+| [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 ## Binary Indexed Tree
 |  |
 | ------- |
