@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0930-binary-subarrays-with-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0930-binary-subarrays-with-sum) |
 | [0946-validate-stack-sequences](https://github.com/bytebeaver/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
 | [0952-word-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0952-word-subsets) |
+| [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/bytebeaver/leetcode-solutions/tree/master/0974-subarray-sums-divisible-by-k) |
 | [0977-squares-of-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0977-squares-of-a-sorted-array) |
 | [0992-subarrays-with-k-different-integers](https://github.com/bytebeaver/leetcode-solutions/tree/master/0992-subarrays-with-k-different-integers) |
@@ -332,6 +333,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0239-sliding-window-maximum) |
 | [0295-find-median-from-data-stream](https://github.com/bytebeaver/leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
+| [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
 | [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
@@ -419,6 +421,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0775-global-and-local-inversions](https://github.com/bytebeaver/leetcode-solutions/tree/master/0775-global-and-local-inversions) |
 | [0877-stone-game](https://github.com/bytebeaver/leetcode-solutions/tree/master/0877-stone-game) |
 | [0878-nth-magical-number](https://github.com/bytebeaver/leetcode-solutions/tree/master/0878-nth-magical-number) |
+| [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1140-stone-game-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1140-stone-game-ii) |
 | [1248-count-number-of-nice-subarrays](https://github.com/bytebeaver/leetcode-solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1406-stone-game-iii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1406-stone-game-iii) |
@@ -454,6 +457,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0148-sort-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0148-sort-list) |
 | [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0295-find-median-from-data-stream](https://github.com/bytebeaver/leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
+| [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0977-squares-of-a-sorted-array) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
@@ -488,6 +492,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+| [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
 ## Merge Sort
 |  |
 | ------- |
@@ -738,4 +743,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
+| [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
+## Geometry
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
+## K-D Tree
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
