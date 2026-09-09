@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/bytebeaver/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0198-house-robber](https://github.com/bytebeaver/leetcode-solutions/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0213-house-robber-ii) |
+| [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0239-sliding-window-maximum) |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
 | [0410-split-array-largest-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0410-split-array-largest-sum) |
@@ -327,6 +328,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0239-sliding-window-maximum) |
 | [0295-find-median-from-data-stream](https://github.com/bytebeaver/leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
@@ -450,6 +452,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0018-4sum) |
 | [0056-merge-intervals](https://github.com/bytebeaver/leetcode-solutions/tree/master/0056-merge-intervals) |
 | [0148-sort-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0148-sort-list) |
+| [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0295-find-median-from-data-stream](https://github.com/bytebeaver/leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
 | [0977-squares-of-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0977-squares-of-a-sorted-array) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -482,6 +485,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0148-sort-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0148-sort-list) |
+| [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 ## Merge Sort
@@ -730,4 +734,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/bytebeaver/leetcode-solutions/tree/master/0146-lru-cache) |
+## Quickselect
+|  |
+| ------- |
+| [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 <!---LeetCode Topics End-->
