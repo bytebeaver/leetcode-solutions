@@ -1,25 +1,22 @@
 class Solution {
 public:
+
+    double solve( double x, long long n)
+    {
+        if( n==0) return 1;
+
+        if( n<0) return solve( (1/x), -n);
+
+        if( n%2 == 0)
+        return solve ( x*x, n/2);
+
+        else if( n%2 == 1)
+        return  x* solve( x*x, (n-1)/2);
+
+    return 0;
+    }
     double myPow(double x, int n) {
         
-       if(n==0)
-       {
-           return 1;
-       }
-
-    double fn1=myPow(x,n/2);
-
-     double fn= fn1*fn1;
-
-      if(n%2==1)
-      {
-          fn=x*fn;
-      }
-      else if (n % 2 == -1) {
-        fn /= x;
-    }
-
-      return fn;
-      
+        return solve ( x, (long long)n);
     }
 };
