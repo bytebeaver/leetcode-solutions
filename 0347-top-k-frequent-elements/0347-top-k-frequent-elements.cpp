@@ -6,7 +6,7 @@ public:
     struct lambda{
         bool operator()( P &p1, P &p2)
         {
-            return p1.second < p2.second;
+            return p1.second > p2.second;
         }
     };
     vector<int> topKFrequent(vector<int>& nums, int k) {
@@ -22,7 +22,12 @@ public:
 
         for( auto &it : mp)
         {
+           
             pq.push( {it.first, it.second});
+             if( pq.size() > k)
+            {
+                pq.pop();
+            }
         }
 
         vector<int> result;
