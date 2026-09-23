@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0486-predict-the-winner](https://github.com/bytebeaver/leetcode-solutions/tree/master/0486-predict-the-winner) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 | [0496-next-greater-element-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/0496-next-greater-element-i) |
+| [0502-ipo](https://github.com/bytebeaver/leetcode-solutions/tree/master/0502-ipo) |
 | [0503-next-greater-element-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
 | [0525-contiguous-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0525-contiguous-array) |
 | [0540-single-element-in-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0540-single-element-in-a-sorted-array) |
@@ -278,6 +279,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0402-remove-k-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/0402-remove-k-digits) |
 | [0410-split-array-largest-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0410-split-array-largest-sum) |
+| [0502-ipo](https://github.com/bytebeaver/leetcode-solutions/tree/master/0502-ipo) |
 | [1502-construct-k-palindrome-strings](https://github.com/bytebeaver/leetcode-solutions/tree/master/1502-construct-k-palindrome-strings) |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/1802-maximum-value-at-a-given-index-in-a-bounded-array) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
@@ -349,6 +351,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
 | [0451-sort-characters-by-frequency](https://github.com/bytebeaver/leetcode-solutions/tree/master/0451-sort-characters-by-frequency) |
 | [0480-sliding-window-median](https://github.com/bytebeaver/leetcode-solutions/tree/master/0480-sliding-window-median) |
+| [0502-ipo](https://github.com/bytebeaver/leetcode-solutions/tree/master/0502-ipo) |
 | [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
 | [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2462-total-cost-to-hire-k-workers](https://github.com/bytebeaver/leetcode-solutions/tree/master/2462-total-cost-to-hire-k-workers) |
@@ -477,6 +480,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/bytebeaver/leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/bytebeaver/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/bytebeaver/leetcode-solutions/tree/master/0451-sort-characters-by-frequency) |
+| [0502-ipo](https://github.com/bytebeaver/leetcode-solutions/tree/master/0502-ipo) |
 | [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0977-squares-of-a-sorted-array) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
