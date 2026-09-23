@@ -16,7 +16,7 @@ public:
         int i=0; 
 
         priority_queue< int> maxProfit;
-        while( i<n && k>0 )
+        while( k>0 )
         {
             while( i<n && vec[i].first <= w)
             {
@@ -32,10 +32,6 @@ public:
                 maxProfit.pop();
                 k--;
             }
-
-            
-            if( k == 0)
-            break;
         }
 
 
