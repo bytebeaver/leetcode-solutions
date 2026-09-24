@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0213-house-robber-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0213-house-robber-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0239-sliding-window-maximum) |
+| [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
 | [0347-top-k-frequent-elements](https://github.com/bytebeaver/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
@@ -499,6 +500,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0146-lru-cache](https://github.com/bytebeaver/leetcode-solutions/tree/master/0146-lru-cache) |
 | [0295-find-median-from-data-stream](https://github.com/bytebeaver/leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
+| [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
 | [0901-online-stock-span](https://github.com/bytebeaver/leetcode-solutions/tree/master/0901-online-stock-span) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/bytebeaver/leetcode-solutions/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1477-product-of-the-last-k-numbers](https://github.com/bytebeaver/leetcode-solutions/tree/master/1477-product-of-the-last-k-numbers) |
@@ -517,6 +519,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0148-sort-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0148-sort-list) |
 | [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
+| [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
 | [0347-top-k-frequent-elements](https://github.com/bytebeaver/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
@@ -727,10 +730,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Indexed Tree
 |  |
 | ------- |
+| [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 ## Segment Tree
 |  |
 | ------- |
+| [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 ## Ordered Set
 |  |
@@ -789,4 +794,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/bytebeaver/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/bytebeaver/leetcode-solutions/tree/master/0451-sort-characters-by-frequency) |
+## Sqrt Decomposition
+|  |
+| ------- |
+| [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
 <!---LeetCode Topics End-->
