@@ -70,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/bytebeaver/leetcode-solutions/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/bytebeaver/leetcode-solutions/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1364-tuple-with-same-product](https://github.com/bytebeaver/leetcode-solutions/tree/master/1364-tuple-with-same-product) |
+| [1395-count-number-of-teams](https://github.com/bytebeaver/leetcode-solutions/tree/master/1395-count-number-of-teams) |
 | [1396-count-servers-that-communicate](https://github.com/bytebeaver/leetcode-solutions/tree/master/1396-count-servers-that-communicate) |
 | [1406-stone-game-iii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1406-stone-game-iii) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/bytebeaver/leetcode-solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
@@ -595,6 +596,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1140-stone-game-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1140-stone-game-ii) |
 | [1170-shortest-common-supersequence](https://github.com/bytebeaver/leetcode-solutions/tree/master/1170-shortest-common-supersequence) |
 | [1186-maximum-subarray-sum-with-one-deletion](https://github.com/bytebeaver/leetcode-solutions/tree/master/1186-maximum-subarray-sum-with-one-deletion) |
+| [1395-count-number-of-teams](https://github.com/bytebeaver/leetcode-solutions/tree/master/1395-count-number-of-teams) |
 | [1406-stone-game-iii](https://github.com/bytebeaver/leetcode-solutions/tree/master/1406-stone-game-iii) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/bytebeaver/leetcode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
@@ -732,11 +734,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
+| [1395-count-number-of-teams](https://github.com/bytebeaver/leetcode-solutions/tree/master/1395-count-number-of-teams) |
 ## Segment Tree
 |  |
 | ------- |
 | [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
+| [1395-count-number-of-teams](https://github.com/bytebeaver/leetcode-solutions/tree/master/1395-count-number-of-teams) |
 ## Ordered Set
 |  |
 | ------- |
