@@ -3,43 +3,46 @@ public:
     TreeNode* insertIntoBST(TreeNode* root, int val) {
 
         // If tree is empty, new node becomes the root
-        if (root == NULL)
-            return new TreeNode(val);
+        if(root == NULL) return new TreeNode(val);
 
-        TreeNode* returningNode = root;
+        // Keep a pointer to traverse the tree
+        TreeNode *cur = root;
 
-        // Create the new node
-        TreeNode* newNode = new TreeNode(val);
-
-        while (true)
+        while(true)
         {
-            // Go to the right subtree
-            if (root->val < val)
+            // val >= cur->val → go to right
+            // This allows duplicate values on the right
+            if(cur->val <= val)
             {
-                // If right is empty, insert here
-                if (root->right == NULL)
+                // If right child exists, keep moving right
+                if(cur->right != NULL)
+                    cur = cur->right;
+
+                // Otherwise insert new node here
+                else
                 {
-                    root->right = newNode;
+                    cur->right = new TreeNode(val);
                     break;
                 }
-
-                root = root->right;
             }
 
-            // Go to the left subtree
+            // val < cur->val → go to left
             else
             {
-                // If left is empty, insert here
-                if (root->left == NULL)
+                // If left child exists, keep moving left
+                if(cur->left != NULL)
+                    cur = cur->left;
+
+                // Otherwise insert new node here
+                else
                 {
-                    root->left = newNode;
+                    cur->left = new TreeNode(val);
                     break;
                 }
-
-                root = root->left;
             }
         }
 
-        return returningNode;
+        // Return original root
+        return root;
     }
 };
