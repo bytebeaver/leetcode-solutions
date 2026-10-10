@@ -84,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/bytebeaver/leetcode-solutions/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/1927-maximum-ascending-subarray-sum) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/bytebeaver/leetcode-solutions/tree/master/1944-number-of-visible-people-in-a-queue) |
+| [1962-remove-stones-to-minimize-the-total](https://github.com/bytebeaver/leetcode-solutions/tree/master/1962-remove-stones-to-minimize-the-total) |
 | [2104-sum-of-subarray-ranges](https://github.com/bytebeaver/leetcode-solutions/tree/master/2104-sum-of-subarray-ranges) |
 | [2107-find-unique-binary-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/2107-find-unique-binary-string) |
 | [2145-grid-game](https://github.com/bytebeaver/leetcode-solutions/tree/master/2145-grid-game) |
@@ -285,6 +286,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0502-ipo](https://github.com/bytebeaver/leetcode-solutions/tree/master/0502-ipo) |
 | [1502-construct-k-palindrome-strings](https://github.com/bytebeaver/leetcode-solutions/tree/master/1502-construct-k-palindrome-strings) |
 | [1802-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/1802-maximum-value-at-a-given-index-in-a-bounded-array) |
+| [1962-remove-stones-to-minimize-the-total](https://github.com/bytebeaver/leetcode-solutions/tree/master/1962-remove-stones-to-minimize-the-total) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/2456-construct-smallest-number-from-di-string) |
 | [2509-minimize-xor](https://github.com/bytebeaver/leetcode-solutions/tree/master/2509-minimize-xor) |
@@ -357,6 +359,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0502-ipo](https://github.com/bytebeaver/leetcode-solutions/tree/master/0502-ipo) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/bytebeaver/leetcode-solutions/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
+| [1962-remove-stones-to-minimize-the-total](https://github.com/bytebeaver/leetcode-solutions/tree/master/1962-remove-stones-to-minimize-the-total) |
 | [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2462-total-cost-to-hire-k-workers](https://github.com/bytebeaver/leetcode-solutions/tree/master/2462-total-cost-to-hire-k-workers) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
