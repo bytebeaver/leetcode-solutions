@@ -102,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2465-shifting-letters-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/2465-shifting-letters-ii) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2478-longest-nice-subarray](https://github.com/bytebeaver/leetcode-solutions/tree/master/2478-longest-nice-subarray) |
+| [2542-maximum-subsequence-score](https://github.com/bytebeaver/leetcode-solutions/tree/master/2542-maximum-subsequence-score) |
 | [2551-apply-operations-to-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/2551-apply-operations-to-an-array) |
 | [2665-minimum-time-to-repair-cars](https://github.com/bytebeaver/leetcode-solutions/tree/master/2665-minimum-time-to-repair-cars) |
 | [2690-house-robber-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2690-house-robber-iv) |
@@ -291,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/bytebeaver/leetcode-solutions/tree/master/2456-construct-smallest-number-from-di-string) |
 | [2509-minimize-xor](https://github.com/bytebeaver/leetcode-solutions/tree/master/2509-minimize-xor) |
+| [2542-maximum-subsequence-score](https://github.com/bytebeaver/leetcode-solutions/tree/master/2542-maximum-subsequence-score) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/bytebeaver/leetcode-solutions/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
 ## Counting
@@ -365,6 +367,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2462-total-cost-to-hire-k-workers](https://github.com/bytebeaver/leetcode-solutions/tree/master/2462-total-cost-to-hire-k-workers) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
+| [2542-maximum-subsequence-score](https://github.com/bytebeaver/leetcode-solutions/tree/master/2542-maximum-subsequence-score) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3478-choose-k-elements-with-maximum-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/3478-choose-k-elements-with-maximum-sum) |
 ## Matrix
@@ -496,6 +499,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
+| [2542-maximum-subsequence-score](https://github.com/bytebeaver/leetcode-solutions/tree/master/2542-maximum-subsequence-score) |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/bytebeaver/leetcode-solutions/tree/master/2824-count-pairs-whose-sum-is-less-than-target) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/bytebeaver/leetcode-solutions/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3478-choose-k-elements-with-maximum-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/3478-choose-k-elements-with-maximum-sum) |
