@@ -132,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0402-remove-k-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/bytebeaver/leetcode-solutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/bytebeaver/leetcode-solutions/tree/master/0451-sort-characters-by-frequency) |
+| [0856-score-of-parentheses](https://github.com/bytebeaver/leetcode-solutions/tree/master/0856-score-of-parentheses) |
 | [0952-word-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0952-word-subsets) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/bytebeaver/leetcode-solutions/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1160-letter-tile-possibilities](https://github.com/bytebeaver/leetcode-solutions/tree/master/1160-letter-tile-possibilities) |
@@ -325,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/bytebeaver/leetcode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
 | [0735-asteroid-collision](https://github.com/bytebeaver/leetcode-solutions/tree/master/0735-asteroid-collision) |
+| [0856-score-of-parentheses](https://github.com/bytebeaver/leetcode-solutions/tree/master/0856-score-of-parentheses) |
 | [0901-online-stock-span](https://github.com/bytebeaver/leetcode-solutions/tree/master/0901-online-stock-span) |
 | [0907-sum-of-subarray-minimums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [0946-validate-stack-sequences](https://github.com/bytebeaver/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
@@ -838,5 +840,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/bytebeaver/leetcode-solutions/tree/master/0032-longest-valid-parentheses) |
+| [0856-score-of-parentheses](https://github.com/bytebeaver/leetcode-solutions/tree/master/0856-score-of-parentheses) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/bytebeaver/leetcode-solutions/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 <!---LeetCode Topics End-->
