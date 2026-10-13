@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0239-sliding-window-maximum) |
 | [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
+| [0327-count-of-range-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0327-count-of-range-sum) |
 | [0347-top-k-frequent-elements](https://github.com/bytebeaver/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0407-trapping-rain-water-ii](https://github.com/bytebeaver/leetcode-solutions/tree/master/0407-trapping-rain-water-ii) |
@@ -544,6 +545,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0148-sort-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0148-sort-list) |
 | [0215-kth-largest-element-in-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
+| [0327-count-of-range-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0327-count-of-range-sum) |
 | [0347-top-k-frequent-elements](https://github.com/bytebeaver/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/bytebeaver/leetcode-solutions/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
@@ -552,6 +554,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0148-sort-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/0148-sort-list) |
+| [0327-count-of-range-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0327-count-of-range-sum) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 ## Backtracking
 |  |
@@ -668,6 +671,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/bytebeaver/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/bytebeaver/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0327-count-of-range-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0327-count-of-range-sum) |
 | [0410-split-array-largest-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0410-split-array-largest-sum) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0540-single-element-in-a-sorted-array) |
@@ -765,21 +769,25 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
+| [0327-count-of-range-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0327-count-of-range-sum) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 | [1395-count-number-of-teams](https://github.com/bytebeaver/leetcode-solutions/tree/master/1395-count-number-of-teams) |
 ## Segment Tree
 |  |
 | ------- |
 | [0307-range-sum-query-mutable](https://github.com/bytebeaver/leetcode-solutions/tree/master/0307-range-sum-query-mutable) |
+| [0327-count-of-range-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0327-count-of-range-sum) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 | [1395-count-number-of-teams](https://github.com/bytebeaver/leetcode-solutions/tree/master/1395-count-number-of-teams) |
 ## Ordered Set
 |  |
 | ------- |
+| [0327-count-of-range-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0327-count-of-range-sum) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 ## Treap
 |  |
 | ------- |
+| [0327-count-of-range-sum](https://github.com/bytebeaver/leetcode-solutions/tree/master/0327-count-of-range-sum) |
 | [0480-sliding-window-median](https://github.com/bytebeaver/leetcode-solutions/tree/master/0480-sliding-window-median) |
 | [0493-reverse-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/0493-reverse-pairs) |
 ## Quicksort
