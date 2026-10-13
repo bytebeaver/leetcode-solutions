@@ -95,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2292-counting-words-with-a-given-prefix](https://github.com/bytebeaver/leetcode-solutions/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2308-divide-array-into-equal-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/2308-divide-array-into-equal-pairs) |
 | [2358-number-of-ways-to-split-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/2358-number-of-ways-to-split-array) |
+| [2386-find-the-k-sum-of-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/2386-find-the-k-sum-of-an-array) |
 | [2448-count-number-of-bad-pairs](https://github.com/bytebeaver/leetcode-solutions/tree/master/2448-count-number-of-bad-pairs) |
 | [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/bytebeaver/leetcode-solutions/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
@@ -370,6 +371,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/bytebeaver/leetcode-solutions/tree/master/1046-last-stone-weight) |
 | [1962-remove-stones-to-minimize-the-total](https://github.com/bytebeaver/leetcode-solutions/tree/master/1962-remove-stones-to-minimize-the-total) |
+| [2386-find-the-k-sum-of-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/2386-find-the-k-sum-of-an-array) |
 | [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2462-total-cost-to-hire-k-workers](https://github.com/bytebeaver/leetcode-solutions/tree/master/2462-total-cost-to-hire-k-workers) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
@@ -503,6 +505,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0973-k-closest-points-to-origin](https://github.com/bytebeaver/leetcode-solutions/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/0977-squares-of-a-sorted-array) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/bytebeaver/leetcode-solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
+| [2386-find-the-k-sum-of-an-array](https://github.com/bytebeaver/leetcode-solutions/tree/master/2386-find-the-k-sum-of-an-array) |
 | [2454-next-greater-element-iv](https://github.com/bytebeaver/leetcode-solutions/tree/master/2454-next-greater-element-iv) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/bytebeaver/leetcode-solutions/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2542-maximum-subsequence-score](https://github.com/bytebeaver/leetcode-solutions/tree/master/2542-maximum-subsequence-score) |
