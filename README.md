@@ -135,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0451-sort-characters-by-frequency](https://github.com/bytebeaver/leetcode-solutions/tree/master/0451-sort-characters-by-frequency) |
 | [0856-score-of-parentheses](https://github.com/bytebeaver/leetcode-solutions/tree/master/0856-score-of-parentheses) |
 | [0952-word-subsets](https://github.com/bytebeaver/leetcode-solutions/tree/master/0952-word-subsets) |
+| [1021-remove-outermost-parentheses](https://github.com/bytebeaver/leetcode-solutions/tree/master/1021-remove-outermost-parentheses) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/bytebeaver/leetcode-solutions/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1160-letter-tile-possibilities](https://github.com/bytebeaver/leetcode-solutions/tree/master/1160-letter-tile-possibilities) |
 | [1170-shortest-common-supersequence](https://github.com/bytebeaver/leetcode-solutions/tree/master/1170-shortest-common-supersequence) |
@@ -332,6 +333,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0907-sum-of-subarray-minimums](https://github.com/bytebeaver/leetcode-solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [0946-validate-stack-sequences](https://github.com/bytebeaver/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
 | [1019-next-greater-node-in-linked-list](https://github.com/bytebeaver/leetcode-solutions/tree/master/1019-next-greater-node-in-linked-list) |
+| [1021-remove-outermost-parentheses](https://github.com/bytebeaver/leetcode-solutions/tree/master/1021-remove-outermost-parentheses) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/bytebeaver/leetcode-solutions/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/bytebeaver/leetcode-solutions/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/bytebeaver/leetcode-solutions/tree/master/2021-remove-all-occurrences-of-a-substring) |
@@ -844,5 +846,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/bytebeaver/leetcode-solutions/tree/master/0032-longest-valid-parentheses) |
 | [0856-score-of-parentheses](https://github.com/bytebeaver/leetcode-solutions/tree/master/0856-score-of-parentheses) |
+| [1021-remove-outermost-parentheses](https://github.com/bytebeaver/leetcode-solutions/tree/master/1021-remove-outermost-parentheses) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/bytebeaver/leetcode-solutions/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 <!---LeetCode Topics End-->
